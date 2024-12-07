@@ -1,19 +1,26 @@
 // ===owl Carousel===
-// var owl = $('.owl-carousel');
-// owl.owlCarousel({
-//     items:4,
-//     loop:true,
-//     margin:10,
-//     autoplay:true,
-//     autoplayTimeout:500,
-//     autoplayHoverPause:true
-// });
-// $('.play').on('click',function(){
-//     owl.trigger('play.owl.autoplay',[1000])
-// })
-// $('.stop').on('click',function(){
-//     owl.trigger('stop.owl.autoplay')
-// })
+$(".owl-carousel").owlCarousel({
+  rtl: true,
+  loop: true,
+  margin: 10,
+  nav: true,
+  // autoplay: true,
+  autoplayTimeout: 3000,
+  autoplayHoverPause: false,
+  
+  responsive: {
+    0: {
+      items: 2,
+    },
+    600: {
+      items: 1,
+    },
+    1000: {
+      items: 1,
+    },
+  },
+});
+// ===========================================================
 
 
 
@@ -23,8 +30,12 @@
 
 
 
+
+
+
+// ================================================================
 const mainPageProductsContainer = document.getElementById("main-page-products");
-const root = document.getElementById('main-page-products');
+const root = document.getElementById("main-page-products");
 async function getLimitedProduct(limitCount = 4) {
   //   let data = "";
   return await fetch(`https://fakestoreapi.com/products?limit=${limitCount}`)
