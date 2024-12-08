@@ -4,15 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ShopProject</title>
-    <link rel="stylesheet" href="./output.css" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
+
     <link
       rel="stylesheet"
       href="./assets/fonts/fontawesome-free-6.7.1-web/css/all.min.css"
     />
-    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css" />
-
+    
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <script src="./assets/js/main.js" defer></script>
   </head>
   <body>
@@ -70,7 +73,8 @@ header
           <img src="./assets/imgs/logo_corano_125x.webp" alt="" />
         </div>
       </div>
-      <div class="slider">
+      <!-- <div class="slider">
+
         <div class="owl-carousel">
           <div>
             <img class="bg-auto" src="./assets/imgs/titr1.webp" alt="" />
@@ -85,13 +89,35 @@ header
             <img class="bg-auto" src="./assets/imgs/titr4.webp" alt="" />
           </div>
         </div>
+      </div> -->
+      <div class="swiper" id="firstSwiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="./assets/imgs/titr1.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/imgs/titr2.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/imgs/titr3.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/imgs/titr4.png" alt="" />
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
       </div>
     </header>
     <!-- =======
 support
 ======= -->
-    <div class="support">
-      <div class="container-primary grid grid-cols-2 gap-10 text-center">
+    <div class="support mt-16">
+      <div
+        class="container-primary grid grid-cols-2 gap-10 text-center w-10/12"
+      >
         <div class="flex flex-col gap-4">
           <i class="fa-solid fa-plane text-2xl text-orange-200"></i>
           <div class="flex flex-col gap-2">
@@ -141,10 +167,12 @@ Our Products
             <span>Silver</span>
           </div>
         </div>
-        <div class=" w-full">
-          <div class="owl-carousel me-0  owl-theme mt-6 ">
-            <div class="item">
-              <div class="w-40">
+        <div class="swiper mt-10" id="secondSwiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="w-2/4">
                 <img
                   src="./assets/imgs/11_150379d3-bbc8-4824-8167-21ed77b19da7_600x.webp"
                   alt=""
@@ -156,8 +184,8 @@ Our Products
                 </div>
               </div>
             </div>
-            <div class="item">
-              <div class="w-40">
+            <div class="swiper-slide">
+              <div class="w-2/4">
                 <img
                   src="./assets/imgs/11_150379d3-bbc8-4824-8167-21ed77b19da7_600x.webp"
                   alt=""
@@ -169,8 +197,8 @@ Our Products
                 </div>
               </div>
             </div>
-            <div class="item">
-              <div class="w-40">
+            <div class="swiper-slide">
+              <div class="w-2/4">
                 <img
                   src="./assets/imgs/11_150379d3-bbc8-4824-8167-21ed77b19da7_600x.webp"
                   alt=""
@@ -182,8 +210,8 @@ Our Products
                 </div>
               </div>
             </div>
-            <div class="item">
-              <div class="w-40">
+            <div class="swiper-slide">
+              <div class="w-2/4">
                 <img
                   src="./assets/imgs/11_150379d3-bbc8-4824-8167-21ed77b19da7_600x.webp"
                   alt=""
@@ -195,146 +223,14 @@ Our Products
                 </div>
               </div>
             </div>
-            <div class="item">
-              <div class="w-40">
-                <img
-                  src="./assets/imgs/11_150379d3-bbc8-4824-8167-21ed77b19da7_600x.webp"
-                  alt=""
-                />
-                <div class="flex flex-col gap-3 mt-3">
-                  <span>type 1</span>
-                  <span>Lorem ipsum dolor sit</span>
-                  <span>100.000</span>
-                </div>
-              </div>
-            </div>
-            <div class="">
-              <div class="w-40">
-                <img
-                  src="./assets/imgs/11_150379d3-bbc8-4824-8167-21ed77b19da7_600x.webp"
-                  alt=""
-                />
-                <div class="flex flex-col gap-3 mt-3">
-                  <span>type 1</span>
-                  <span>Lorem ipsum dolor sit</span>
-                  <span>100.000</span>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="w-40">
-                <img
-                  src="./assets/imgs/11_150379d3-bbc8-4824-8167-21ed77b19da7_600x.webp"
-                  alt=""
-                />
-                <div class="flex flex-col gap-3 mt-3">
-                  <span>type 1</span>
-                  <span>Lorem ipsum dolor sit</span>
-                  <span>100.000</span>
-                </div>
-              </div>
-            </div>
+            
           </div>
-        </div>
-        <div class=" w-full mt-10">
-          <div class="owl-carousel me-0  owl-theme mt-6 ">
-            <div class="item">
-              <div class="w-40">
-                <img
-                  src="./assets/imgs/11_150379d3-bbc8-4824-8167-21ed77b19da7_600x.webp"
-                  alt=""
-                />
-                <div class="flex flex-col gap-3 mt-3">
-                  <span>type 1</span>
-                  <span>Lorem ipsum dolor sit</span>
-                  <span>100.000</span>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="w-40">
-                <img
-                  src="./assets/imgs/11_150379d3-bbc8-4824-8167-21ed77b19da7_600x.webp"
-                  alt=""
-                />
-                <div class="flex flex-col gap-3 mt-3">
-                  <span>type 1</span>
-                  <span>Lorem ipsum dolor sit</span>
-                  <span>100.000</span>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="w-40">
-                <img
-                  src="./assets/imgs/11_150379d3-bbc8-4824-8167-21ed77b19da7_600x.webp"
-                  alt=""
-                />
-                <div class="flex flex-col gap-3 mt-3">
-                  <span>type 1</span>
-                  <span>Lorem ipsum dolor sit</span>
-                  <span>100.000</span>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="w-40">
-                <img
-                  src="./assets/imgs/11_150379d3-bbc8-4824-8167-21ed77b19da7_600x.webp"
-                  alt=""
-                />
-                <div class="flex flex-col gap-3 mt-3">
-                  <span>type 1</span>
-                  <span>Lorem ipsum dolor sit</span>
-                  <span>100.000</span>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="w-40">
-                <img
-                  src="./assets/imgs/11_150379d3-bbc8-4824-8167-21ed77b19da7_600x.webp"
-                  alt=""
-                />
-                <div class="flex flex-col gap-3 mt-3">
-                  <span>type 1</span>
-                  <span>Lorem ipsum dolor sit</span>
-                  <span>100.000</span>
-                </div>
-              </div>
-            </div>
-            <div class="">
-              <div class="w-40">
-                <img
-                  src="./assets/imgs/11_150379d3-bbc8-4824-8167-21ed77b19da7_600x.webp"
-                  alt=""
-                />
-                <div class="flex flex-col gap-3 mt-3">
-                  <span>type 1</span>
-                  <span>Lorem ipsum dolor sit</span>
-                  <span>100.000</span>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="w-40">
-                <img
-                  src="./assets/imgs/11_150379d3-bbc8-4824-8167-21ed77b19da7_600x.webp"
-                  alt=""
-                />
-                <div class="flex flex-col gap-3 mt-3">
-                  <span>type 1</span>
-                  <span>Lorem ipsum dolor sit</span>
-                  <span>100.000</span>
-                </div>
-              </div>
-            </div>
-          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
         </div>
       </div>
     </div>
-
-    <script src="./assets/js/jquery.min.js"></script>
-    <script src="./assets/js/owl.carousel.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
   </body>
 </html>

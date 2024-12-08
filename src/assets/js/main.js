@@ -1,37 +1,58 @@
-// ===owl Carousel===
-$(".owl-carousel").owlCarousel({
-  rtl: true,
+const firstswiper = new Swiper("#firstSwiper", {
+  // Optional parameters
+
   loop: true,
-  margin: 10,
-  nav: true,
-  // autoplay: true,
-  autoplayTimeout: 3000,
-  autoplayHoverPause: false,
-  
-  responsive: {
-    0: {
-      items: 2,
-    },
-    600: {
-      items: 1,
-    },
-    1000: {
-      items: 1,
-    },
+  speed: 900,
+  autoplay: {
+    delay: 3000,
+  },
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: ".swiper-scrollbar",
   },
 });
-// ===========================================================
+// ================================================================
+const secondswiper = new Swiper("#secondSwiper", {
+  // Optional parameters
 
+  loop: true,
+  speed: 900,
+  autoplay: {
+    delay: 3000,
+  },
+  slidesPerView:2,
+spaceBetween:25,
+breakPoints: {
+  640: {
+    slidesperview:2,
+  },
+  960: {
+    slidesperview:3,
+  },
+  1200: {
+    slidesperview:4,
+  },
+},
 
-
-
-
-
-
-
-
-
-
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
 
 // ================================================================
 const mainPageProductsContainer = document.getElementById("main-page-products");
