@@ -35,16 +35,17 @@ const secondswiper = new Swiper("#secondSwiper", {
   },
   slidesPerView:2,
 spaceBetween:25,
-breakPoints: {
-  640: {
-    slidesperview:2,
+breakpoints: {
+  0: {
+    slidesPerView:2,
+  },
+  500: {
+    slidesPerView:3,
   },
   960: {
-    slidesperview:3,
+    slidesPerView:4,
   },
-  1200: {
-    slidesperview:4,
-  },
+ 
 },
 
   // If we need pagination
@@ -53,7 +54,104 @@ breakPoints: {
     clickable: true,
   },
 });
+// ================================================================
+const thirdSwiper = new Swiper("#thirdSwiper", {
+  // Optional parameters
 
+  loop: true,
+  speed: 900,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: true,
+    reverseDirection: true,
+  },
+  spaceBetween:25,
+
+  breakpoints: {
+    0: {
+      slidesPerView:2,
+    },
+    500: {
+      slidesPerView:3,
+    },
+    960: {
+      slidesPerView:4,
+    },
+   
+  },
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+});
+
+// ================================================================
+const fourthSwiper = new Swiper("#fourthSwiper", {
+  // Optional parameters
+
+  loop: true,
+  speed: 900,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: true,
+    reverseDirection: true,
+  },
+  spaceBetween:25,
+
+  breakpoints: {
+    0: {
+      slidesPerView:2,
+    },
+    500: {
+      slidesPerView:3,
+    },
+    960: {
+      slidesPerView:5,
+    },
+   
+  },
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+});
+// ================================================================
+const fifthSwiper = new Swiper("#fifthSwiper", {
+  // Optional parameters
+
+  loop: true,
+  speed: 900,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: true,
+    
+  },
+  spaceBetween:25,
+
+  breakpoints: {
+    0: {
+      slidesPerView:2,
+    },
+    500: {
+      slidesPerView:3,
+    },
+    960: {
+      slidesPerView:5,
+    },
+   
+  },
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+});
+fifthSwiper
 // ================================================================
 const mainPageProductsContainer = document.getElementById("main-page-products");
 const root = document.getElementById("main-page-products");

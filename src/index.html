@@ -9,7 +9,7 @@
       rel="stylesheet"
       href="./assets/fonts/fontawesome-free-6.7.1-web/css/all.min.css"
     />
-    
+
     <link rel="stylesheet" href="./output.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link
@@ -61,9 +61,9 @@
 header
 ======= -->
     <header>
-      <div class="container container-primary">
+      <div class="container container-primary sticky  top-0 z-50 bg-white ">
         <div
-          class="navbar flex items-center justify-between px-4 mt-4 shadow-lg pb-2"
+          class="navbar flex items-center justify-between px-4 mt-4 shadow-lg pb-2 "
         >
           <div class="flex gap-5">
             <i class="fa-solid fa-bars text-2xl"></i>
@@ -90,7 +90,7 @@ header
           </div>
         </div>
       </div> -->
-      <div class="swiper" id="firstSwiper">
+      <div class="swiper " id="firstSwiper">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
@@ -167,12 +167,15 @@ Our Products
             <span>Silver</span>
           </div>
         </div>
-        <div class="swiper mt-10" id="secondSwiper">
+        <!-- ===============
+    secondSwiper    
+    ===============   -->
+        <div class="swiper mt-10 relative" id="secondSwiper">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide">
-              <div class="w-2/4">
+              <div class="">
                 <img
                   src="./assets/imgs/11_150379d3-bbc8-4824-8167-21ed77b19da7_600x.webp"
                   alt=""
@@ -185,7 +188,20 @@ Our Products
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="w-2/4">
+              <div class="">
+                <img
+                  src="./assets/imgs/12_ff3fb89f-6632-446a-a36a-84c0eaa52ccf_600x.webp"
+                  alt=""
+                />
+                <div class="flex flex-col gap-3 mt-3">
+                  <span>type 1</span>
+                  <span>Lorem ipsum dolor sit</span>
+                  <span>100.000</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="">
                 <img
                   src="./assets/imgs/11_150379d3-bbc8-4824-8167-21ed77b19da7_600x.webp"
                   alt=""
@@ -198,9 +214,9 @@ Our Products
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="w-2/4">
+              <div class="">
                 <img
-                  src="./assets/imgs/11_150379d3-bbc8-4824-8167-21ed77b19da7_600x.webp"
+                  src="./assets/imgs/12_ff3fb89f-6632-446a-a36a-84c0eaa52ccf_600x.webp"
                   alt=""
                 />
                 <div class="flex flex-col gap-3 mt-3">
@@ -211,7 +227,7 @@ Our Products
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="w-2/4">
+              <div class="">
                 <img
                   src="./assets/imgs/11_150379d3-bbc8-4824-8167-21ed77b19da7_600x.webp"
                   alt=""
@@ -223,14 +239,269 @@ Our Products
                 </div>
               </div>
             </div>
-            
+          </div>
+        </div>
+        <!-- ===============
+    thirdSwiper    
+    ===============   -->
+
+        <div class="swiper mt-20" id="thirdSwiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="./assets/imgs/img1-middle_405x.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/imgs/img4-middle_405x.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/imgs/img2-middle_405x.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/imgs/img3-middle_405x.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/imgs/img4-middle_405x.jpg" alt="" />
+            </div>
           </div>
           <!-- If we need pagination -->
           <div class="swiper-pagination"></div>
         </div>
+        <div class="grid md:grid-cols-2 gap-4 mt-20">
+          <div class="relative max-w-400">
+            <img class="w-full" src="./assets/imgs/img4-top_545x.jpg" alt="" />
+            <div class="absolute top-1/4 right-4">
+              <div class="flex flex-col gap-1">
+                <span>BEAUTIFUL</span>
+                <h2 class="text-xl">Wedding Rings</h2>
+                <a href="">Shop Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="relative">
+            <img class="w-full" src="./assets/imgs/img2-top_545x.jpg" alt="" />
+            <div class="absolute top-1/4 right-4">
+              <div class="flex flex-col gap-1">
+                <span>BEAUTIFUL</span>
+                <h2 class="text-xl">Wedding Rings</h2>
+                <a href="">Shop Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="relative">
+            <img class="w-full" src="./assets/imgs/img3-top_545x.jpg" alt="" />
+            <div class="absolute top-1/4 right-4">
+              <div class="flex flex-col gap-1">
+                <span>BEAUTIFUL</span>
+                <h2 class="text-xl">Wedding Rings</h2>
+                <a href="">Shop Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="relative">
+            <img class="w-full" src="./assets/imgs/img1-top_545x.jpg" alt="" />
+            <div class="absolute top-1/4 right-4">
+              <div class="flex flex-col gap-1">
+                <span>BEAUTIFUL</span>
+                <h2 class="text-xl">Wedding Rings</h2>
+                <a href="">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
+    <!-- ===============
+    special set
+    ===============   -->
+    <div class="text-center mt-10">
+      <div class="flex flex-col gap-7">
+        <div class="w-11/12 mx-auto bg-slate-200 py-8">
+          <div class="gap-6 flex flex-col">
+            <div class="flex flex-col gap-4">
+              <h3 class="text-2xl">Lorem ipsum dolor</h3>
+              <p class="w-11/12 mx-auto">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non vel
+                unde iure neque praesentium, ipsum quae. Corrupti recusandae
+                maiores excepturi?
+              </p>
+              <a href="">Show All</a>
+            </div>
+
+            <img
+              class="mx-auto w-11/12"
+              src="./assets/imgs/img1-middle_405x.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="w-11/12 mx-auto bg-slate-200 py-8">
+          <div class="gap-6 flex flex-col">
+            <div class="flex flex-col gap-4">
+              <h3 class="text-2xl">Lorem ipsum dolor</h3>
+              <p class="w-11/12 mx-auto">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non vel
+                unde iure neque praesentium, ipsum quae. Corrupti recusandae
+                maiores excepturi?
+              </p>
+              <a href="">Show All</a>
+            </div>
+
+            <img
+              class="mx-auto w-11/12"
+              src="./assets/imgs/img1-middle_405x.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="w-11/12 mx-auto bg-slate-200 py-8">
+          <div class="gap-6 flex flex-col">
+            <div class="flex flex-col gap-4">
+              <h3 class="text-2xl">Lorem ipsum dolor</h3>
+              <p class="w-11/12 mx-auto">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non vel
+                unde iure neque praesentium, ipsum quae. Corrupti recusandae
+                maiores excepturi?
+              </p>
+              <a href="">Show All</a>
+            </div>
+
+            <img
+              class="mx-auto w-11/12"
+              src="./assets/imgs/img1-middle_405x.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="w-11/12 mx-auto bg-slate-200 py-8">
+          <div class="gap-6 flex flex-col">
+            <div class="flex flex-col gap-4">
+              <h3 class="text-2xl">Lorem ipsum dolor</h3>
+              <p class="w-11/12 mx-auto">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non vel
+                unde iure neque praesentium, ipsum quae. Corrupti recusandae
+                maiores excepturi?
+              </p>
+              <a href="">Show All</a>
+            </div>
+
+            <img
+              class="mx-auto w-11/12"
+              src="./assets/imgs/img1-middle_405x.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===============
+    Featured Collection   
+    ===============   -->
+    <div class="text-center mt-32">
+      <div class="w-11/12 mx-auto">
+        <div>
+          <h3 class="text-xl font-bold">Featured Collection</h3>
+          <span>Add featured products to weekly lineup</span>
+        </div>
+        <div>
+          <div class="swiper mt-20" id="fourthSwiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="./assets/imgs/img1-middle_405x.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/imgs/img1-middle_405x.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/imgs/img1-middle_405x.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/imgs/img4-middle_405x.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/imgs/img2-middle_405x.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/imgs/img3-middle_405x.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/imgs/img4-middle_405x.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper mt-7" id="fifthSwiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper w-11/12 mx-auto">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img class="" src="./assets/imgs/img1-middle_405x.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/imgs/img4-middle_405x.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/imgs/img2-middle_405x.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/imgs/img3-middle_405x.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/imgs/img4-middle_405x.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/imgs/img4-middle_405x.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/imgs/img4-middle_405x.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===============
+    Footer   
+    ===============   -->
+    <div class="footer bg-zinc-100 mt-20 py-10" dir="ltr">
+      <div class="w-10/12 mx-auto">
+        <div>
+          <img class="mb-4" src="./assets/imgs/logo_corano_125x.webp" alt="" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati,
+            assumenda.
+          </p>
+        </div>
+        <div class="flex flex-col gap-4 mt-5">
+          <div class="flex justify-between">
+            <a href="">Lorem ip</a>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="flex justify-between">
+            <a href="">Lorem ip</a>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="flex justify-between">
+            <a href="">Lorem ip</a>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="flex justify-between">
+            <a href="">Lorem ip</a>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="flex justify-between">
+            <a href="">Lorem ip</a>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  
   </body>
 </html>
