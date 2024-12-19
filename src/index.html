@@ -61,16 +61,28 @@
 header
 ======= -->
     <header>
-      <div class="container container-primary sticky  top-0 z-50 bg-white ">
+      <div class="container container-primary sticky top-0 z-50 bg-white">
         <div
-          class="navbar flex items-center justify-between px-4 mt-4 shadow-lg pb-2 "
+          class="navbar flex items-center justify-between px-4 mt-4 shadow-lg pb-2"
         >
           <div class="flex gap-5">
-            <i class="fa-solid fa-bars text-2xl"></i>
+            <i class="fa-solid fa-bars text-2xl xl:hidden"></i>
             <i class="fa-solid fa-bag-shopping text-2xl"></i>
             <i class="fa-solid fa-magnifying-glass text-2xl"></i>
+            <i class="fa-solid fa-heart text-2xl hidden xl:block"></i>
+            <i class="fa fa-sign-in text-2xl hidden xl:block" ></i>
+
+
           </div>
-          <img src="./assets/imgs/logo_corano_125x.webp" alt="" />
+          <div class="hidden xl:flex xl:gap-6 font-bold">
+            <a href="">Home</a>
+            <a href="">Shop</a>
+            <a href="">Product</a>
+            <a href="">Blog</a>
+            <a href="">Pages</a>
+            <a href="">Contact Us</a>
+          </div>
+          <div><img src="./assets/imgs/logo_corano_125x.webp" alt="" /></div>
         </div>
       </div>
       <!-- <div class="slider">
@@ -90,7 +102,7 @@ header
           </div>
         </div>
       </div> -->
-      <div class="swiper " id="firstSwiper">
+      <div class="swiper" id="firstSwiper">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
@@ -316,8 +328,49 @@ Our Products
     <!-- ===============
     special set
     ===============   -->
-    <div class="text-center mt-10">
-      <div class="flex flex-col gap-7">
+    <div class="text-center mt-10 md:mt-20">
+      <a class="text-3xl" href="">special set</a>
+      <div
+        class="flex flex-col gap-7 md:grid md:grid-cols-2 xl:grid-cols-3 container-primary mt-10"
+      >
+        <div class="w-11/12 mx-auto bg-slate-200 py-8">
+          <div class="gap-6 flex flex-col">
+            <div class="flex flex-col gap-4">
+              <h3 class="text-2xl">Lorem ipsum dolor</h3>
+              <p class="w-11/12 mx-auto">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non vel
+                unde iure neque praesentium, ipsum quae. Corrupti recusandae
+                maiores excepturi?
+              </p>
+              <a href="">Show All</a>
+            </div>
+
+            <img
+              class="mx-auto w-11/12"
+              src="./assets/imgs/img1-middle_405x.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="w-11/12 mx-auto bg-slate-200 py-8">
+          <div class="gap-6 flex flex-col">
+            <div class="flex flex-col gap-4">
+              <h3 class="text-2xl">Lorem ipsum dolor</h3>
+              <p class="w-11/12 mx-auto">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non vel
+                unde iure neque praesentium, ipsum quae. Corrupti recusandae
+                maiores excepturi?
+              </p>
+              <a href="">Show All</a>
+            </div>
+
+            <img
+              class="mx-auto w-11/12"
+              src="./assets/imgs/img1-middle_405x.jpg"
+              alt=""
+            />
+          </div>
+        </div>
         <div class="w-11/12 mx-auto bg-slate-200 py-8">
           <div class="gap-6 flex flex-col">
             <div class="flex flex-col gap-4">
