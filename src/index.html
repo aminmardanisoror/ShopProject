@@ -60,21 +60,19 @@
     <!-- =======
 header
 ======= -->
-    <header>
-      <div class="container container-primary sticky top-0 z-50 bg-white">
+    <header class=" ">
+      <div class="  py-1 text-white shadow-lg bg-primary">
         <div
-          class="navbar flex items-center justify-between px-4 mt-4 shadow-lg pb-2"
+          class="navbar flex items-center justify-between  px-4 mt-4  pb-2 max-w-screen-2xl mx-auto"
         >
           <div class="flex gap-5">
             <i class="fa-solid fa-bars text-2xl xl:hidden"></i>
             <i class="fa-solid fa-bag-shopping text-2xl"></i>
             <i class="fa-solid fa-magnifying-glass text-2xl"></i>
             <i class="fa-solid fa-heart text-2xl hidden xl:block"></i>
-            <i class="fa fa-sign-in text-2xl hidden xl:block" ></i>
-
-
+            <i class="fa fa-sign-in text-2xl hidden xl:block"></i>
           </div>
-          <div class="hidden xl:flex xl:gap-6 font-bold">
+          <div class="hidden xl:flex xl:gap-6 font-bold text-lg">
             <a href="">Home</a>
             <a href="">Shop</a>
             <a href="">Product</a>
@@ -83,6 +81,26 @@ header
             <a href="">Contact Us</a>
           </div>
           <div><img src="./assets/imgs/logo_corano_125x.webp" alt="" /></div>
+        </div>
+        <div class="swiper" id="firstSwiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img class="min-h-60" src="./assets/imgs/titr1.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img class="min-h-60" src="./assets/imgs/titr2.png" alt="" />
+            </div>
+            <div class="swiper-slide ">
+              <img class="min-h-60" src="./assets/imgs/titr3.png" alt="" />
+            </div>
+            <div class="swiper-slide ">
+              <img class="min-h-60" src="./assets/imgs/titr4.png" alt="" />
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination primary-color"></div>
         </div>
       </div>
       <!-- <div class="slider">
@@ -102,57 +120,39 @@ header
           </div>
         </div>
       </div> -->
-      <div class="swiper" id="firstSwiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide">
-            <img src="./assets/imgs/titr1.png" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./assets/imgs/titr2.png" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./assets/imgs/titr3.png" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./assets/imgs/titr4.png" alt="" />
-          </div>
-        </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-      </div>
+      
     </header>
     <!-- =======
 support
 ======= -->
     <div class="support mt-16">
       <div
-        class="container-primary grid grid-cols-2 gap-10 text-center w-10/12"
+        class="container-primary grid md:grid-cols-4 grid-cols-2 gap-10 text-center w-10/12"
       >
         <div class="flex flex-col gap-4">
-          <i class="fa-solid fa-plane text-2xl text-orange-200"></i>
+          <i class="fa-solid fa-rotate-left text-2xl primary-color"></i>
+          
           <div class="flex flex-col gap-2">
             <span>Money Return </span>
             <span>30 days for free return</span>
           </div>
         </div>
         <div class="flex flex-col gap-4">
-          <i class="fa-solid fa-plane text-2xl"></i>
+          <i class="fa-regular fa-credit-card text-2xl primary-color"></i>
           <div class="flex flex-col gap-2">
             <span>Money Return </span>
             <span>30 days for free return</span>
           </div>
         </div>
         <div class="flex flex-col gap-4">
-          <i class="fa-solid fa-plane text-2xl"></i>
+          <i class="fa-solid fa-headset text-2xl primary-color"></i>
           <div class="flex flex-col gap-2">
             <span>Money Return </span>
             <span>30 days for free return</span>
           </div>
         </div>
         <div class="flex flex-col gap-4">
-          <i class="fa-solid fa-plane text-2xl"></i>
+          <i class="fa-solid fa-truck-fast text-2xl primary-color"></i>
           <div class="flex flex-col gap-2">
             <span>Money Return </span>
             <span>30 days for free return</span>
@@ -169,10 +169,10 @@ Our Products
       >
         <div>
           <div class="flex flex-col gap-2">
-            <h1 class="text-3xl">Our Products</h1>
+            <h1 class="text-3xl primary-color">Our Products</h1>
             <span>Add our products to weekly lineup</span>
           </div>
-          <div class="flex gap-7 justify-center mt-8">
+          <div class="flex gap-4 sm:gap-10 justify-center mt-8 primary-color">
             <span>Gold </span>
             <span>Diamond</span>
             <span>Bronze</span>
@@ -194,8 +194,8 @@ Our Products
                 />
                 <div class="flex flex-col gap-3 mt-3">
                   <span>type 1</span>
-                  <span>Lorem ipsum dolor sit</span>
-                  <span>100.000</span>
+                  <span class="primary-color">Lorem ipsum dolor sit</span>
+                  <span >100.000</span>
                 </div>
               </div>
             </div>
@@ -207,7 +207,7 @@ Our Products
                 />
                 <div class="flex flex-col gap-3 mt-3">
                   <span>type 1</span>
-                  <span>Lorem ipsum dolor sit</span>
+                  <span class="primary-color">Lorem ipsum dolor sit</span>
                   <span>100.000</span>
                 </div>
               </div>
@@ -220,7 +220,7 @@ Our Products
                 />
                 <div class="flex flex-col gap-3 mt-3">
                   <span>type 1</span>
-                  <span>Lorem ipsum dolor sit</span>
+                  <span class="primary-color">Lorem ipsum dolor sit</span>
                   <span>100.000</span>
                 </div>
               </div>
@@ -233,7 +233,7 @@ Our Products
                 />
                 <div class="flex flex-col gap-3 mt-3">
                   <span>type 1</span>
-                  <span>Lorem ipsum dolor sit</span>
+                  <span class="primary-color">Lorem ipsum dolor sit</span>
                   <span>100.000</span>
                 </div>
               </div>
@@ -246,7 +246,7 @@ Our Products
                 />
                 <div class="flex flex-col gap-3 mt-3">
                   <span>type 1</span>
-                  <span>Lorem ipsum dolor sit</span>
+                  <span class="primary-color">Lorem ipsum dolor sit</span>
                   <span>100.000</span>
                 </div>
               </div>
@@ -287,7 +287,7 @@ Our Products
               <div class="flex flex-col gap-1">
                 <span>BEAUTIFUL</span>
                 <h2 class="text-xl">Wedding Rings</h2>
-                <a href="">Shop Now</a>
+                <a class="primary-color" href="">Shop Now</a>
               </div>
             </div>
           </div>
@@ -297,7 +297,7 @@ Our Products
               <div class="flex flex-col gap-1">
                 <span>BEAUTIFUL</span>
                 <h2 class="text-xl">Wedding Rings</h2>
-                <a href="">Shop Now</a>
+                <a class="primary-color" href="">Shop Now</a>
               </div>
             </div>
           </div>
@@ -307,7 +307,7 @@ Our Products
               <div class="flex flex-col gap-1">
                 <span>BEAUTIFUL</span>
                 <h2 class="text-xl">Wedding Rings</h2>
-                <a href="">Shop Now</a>
+                <a class="primary-color" href="">Shop Now</a>
               </div>
             </div>
           </div>
@@ -317,7 +317,7 @@ Our Products
               <div class="flex flex-col gap-1">
                 <span>BEAUTIFUL</span>
                 <h2 class="text-xl">Wedding Rings</h2>
-                <a href="">Shop Now</a>
+                <a class="primary-color" href="">Shop Now</a>
               </div>
             </div>
           </div>
@@ -331,9 +331,9 @@ Our Products
     <div class="text-center mt-10 md:mt-20">
       <a class="text-3xl" href="">special set</a>
       <div
-        class="flex flex-col gap-7 md:grid md:grid-cols-2 xl:grid-cols-3 container-primary mt-10"
+        class="flex flex-col gap-7 sm:grid sm:grid-cols-2 xl:grid-cols-3 container-primary mt-10"
       >
-        <div class="w-11/12 mx-auto bg-slate-200 py-8">
+        <div class="w-11/12 mx-auto bg-slate-200 py-8 max-w-md">
           <div class="gap-6 flex flex-col">
             <div class="flex flex-col gap-4">
               <h3 class="text-2xl">Lorem ipsum dolor</h3>
@@ -352,7 +352,7 @@ Our Products
             />
           </div>
         </div>
-        <div class="w-11/12 mx-auto bg-slate-200 py-8">
+        <div class="w-11/12 mx-auto bg-slate-200 py-8 max-w-md">
           <div class="gap-6 flex flex-col">
             <div class="flex flex-col gap-4">
               <h3 class="text-2xl">Lorem ipsum dolor</h3>
@@ -371,7 +371,7 @@ Our Products
             />
           </div>
         </div>
-        <div class="w-11/12 mx-auto bg-slate-200 py-8">
+        <div class="w-11/12 mx-auto bg-slate-100 py-8 max-w-md">
           <div class="gap-6 flex flex-col">
             <div class="flex flex-col gap-4">
               <h3 class="text-2xl">Lorem ipsum dolor</h3>
@@ -390,7 +390,7 @@ Our Products
             />
           </div>
         </div>
-        <div class="w-11/12 mx-auto bg-slate-200 py-8">
+        <div class="w-11/12 mx-auto bg-gray-200 py-8 rounded-3xl shadow-md max-w-md">
           <div class="gap-6 flex flex-col">
             <div class="flex flex-col gap-4">
               <h3 class="text-2xl">Lorem ipsum dolor</h3>
@@ -409,7 +409,7 @@ Our Products
             />
           </div>
         </div>
-        <div class="w-11/12 mx-auto bg-slate-200 py-8">
+        <div class="w-11/12 mx-auto bg-slate-200 py-8 max-w-md">
           <div class="gap-6 flex flex-col">
             <div class="flex flex-col gap-4">
               <h3 class="text-2xl">Lorem ipsum dolor</h3>
@@ -428,7 +428,7 @@ Our Products
             />
           </div>
         </div>
-        <div class="w-11/12 mx-auto bg-slate-200 py-8">
+        <div class="w-11/12 mx-auto bg-slate-200 py-8 max-w-md">
           <div class="gap-6 flex flex-col">
             <div class="flex flex-col gap-4">
               <h3 class="text-2xl">Lorem ipsum dolor</h3>
@@ -459,31 +459,31 @@ Our Products
           <h3 class="text-xl font-bold">Featured Collection</h3>
           <span>Add featured products to weekly lineup</span>
         </div>
-        <div>
-          <div class="swiper mt-20" id="fourthSwiper">
+        <div class="max-w-screen-2xl mx-auto ">
+          <div class="swiper mt-20 " id="fourthSwiper">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide">
-                <img src="./assets/imgs/img1-middle_405x.jpg" alt="" />
+                <img class="w-full xl:h-[300px] " src="./assets/imgs/img1-middle_405x.jpg" alt="" />
               </div>
               <div class="swiper-slide">
-                <img src="./assets/imgs/img1-middle_405x.jpg" alt="" />
+                <img class="w-full xl:h-[300px]" src="./assets/imgs/img1-middle_405x.jpg" alt="" />
               </div>
               <div class="swiper-slide">
-                <img src="./assets/imgs/img1-middle_405x.jpg" alt="" />
+                <img class="w-full xl:h-[300px]" src="./assets/imgs/img1-middle_405x.jpg" alt="" />
               </div>
               <div class="swiper-slide">
-                <img src="./assets/imgs/img4-middle_405x.jpg" alt="" />
+                <img class="w-full xl:h-[300px]" src="./assets/imgs/img4-middle_405x.jpg" alt="" />
               </div>
               <div class="swiper-slide">
-                <img src="./assets/imgs/img2-middle_405x.jpg" alt="" />
+                <img class="w-full xl:h-[300px]" src="./assets/imgs/img2-middle_405x.jpg" alt="" />
               </div>
               <div class="swiper-slide">
-                <img src="./assets/imgs/img3-middle_405x.jpg" alt="" />
+                <img class="w-full xl:h-[300px]" src="./assets/imgs/img3-middle_405x.jpg" alt="" />
               </div>
               <div class="swiper-slide">
-                <img src="./assets/imgs/img4-middle_405x.jpg" alt="" />
+                <img class="w-full xl:h-[300px]" src="./assets/imgs/img4-middle_405x.jpg" alt="" />
               </div>
             </div>
           </div>
@@ -492,25 +492,25 @@ Our Products
             <div class="swiper-wrapper w-11/12 mx-auto">
               <!-- Slides -->
               <div class="swiper-slide">
-                <img class="" src="./assets/imgs/img1-middle_405x.jpg" alt="" />
+                <img  class="w-full xl:h-[300px]" src="./assets/imgs/img1-middle_405x.jpg" alt="" />
               </div>
               <div class="swiper-slide">
-                <img src="./assets/imgs/img4-middle_405x.jpg" alt="" />
+                <img class="w-full xl:h-[300px]" src="./assets/imgs/img4-middle_405x.jpg" alt="" />
               </div>
               <div class="swiper-slide">
-                <img src="./assets/imgs/img2-middle_405x.jpg" alt="" />
+                <img class="w-full xl:h-[300px]" src="./assets/imgs/img2-middle_405x.jpg" alt="" />
               </div>
               <div class="swiper-slide">
-                <img src="./assets/imgs/img3-middle_405x.jpg" alt="" />
+                <img class="w-full xl:h-[300px]" src="./assets/imgs/img3-middle_405x.jpg" alt="" />
               </div>
               <div class="swiper-slide">
-                <img src="./assets/imgs/img4-middle_405x.jpg" alt="" />
+                <img class="w-full xl:h-[300px]" src="./assets/imgs/img4-middle_405x.jpg" alt="" />
               </div>
               <div class="swiper-slide">
-                <img src="./assets/imgs/img4-middle_405x.jpg" alt="" />
+                <img class="w-full xl:h-[300px]" src="./assets/imgs/img4-middle_405x.jpg" alt="" />
               </div>
               <div class="swiper-slide">
-                <img src="./assets/imgs/img4-middle_405x.jpg" alt="" />
+                <img class="w-full xl:h-[300px]" src="./assets/imgs/img4-middle_405x.jpg" alt="" />
               </div>
             </div>
           </div>
@@ -522,34 +522,88 @@ Our Products
     Footer   
     ===============   -->
     <div class="footer bg-zinc-100 mt-20 py-10" dir="ltr">
-      <div class="w-10/12 mx-auto">
+      <div class="w-10/12 mx-auto max-w-screen-sm md:hidden">
         <div>
-          <img class="mb-4" src="./assets/imgs/logo_corano_125x.webp" alt="" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati,
-            assumenda.
-          </p>
+         
+            <img
+              class=""
+              src="./assets/imgs/logo_corano_125x.webp"
+              alt=""
+            />
+        
+          
+            <p class="mt-6">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Obcaecati, assumenda.
+            </p>
+          
         </div>
         <div class="flex flex-col gap-4 mt-5">
           <div class="flex justify-between">
             <a href="">Lorem ip</a>
-            <i class="fa-solid fa-chevron-down"></i>
+            <i class="fa-solid fa-chevron-down primary-color"></i>
           </div>
           <div class="flex justify-between">
             <a href="">Lorem ip</a>
-            <i class="fa-solid fa-chevron-down"></i>
+            <i class="fa-solid fa-chevron-down primary-color"></i>
           </div>
           <div class="flex justify-between">
             <a href="">Lorem ip</a>
-            <i class="fa-solid fa-chevron-down"></i>
+            <i class="fa-solid fa-chevron-down primary-color"></i>
           </div>
           <div class="flex justify-between">
             <a href="">Lorem ip</a>
-            <i class="fa-solid fa-chevron-down"></i>
+            <i class="fa-solid fa-chevron-down primary-color"></i>
           </div>
           <div class="flex justify-between">
             <a href="">Lorem ip</a>
-            <i class="fa-solid fa-chevron-down"></i>
+            <i class="fa-solid fa-chevron-down primary-color"></i>
+          </div>
+        </div>
+      </div>
+      <div
+        class="hidden md:grid-cols-2 md:grid xl:grid-cols-4 container-primary gap-y-20"
+      >
+        <div class="items-center flex flex-col gap-6">
+          <img src="./assets/imgs/logo_corano_125x.webp" alt="" />
+          <p class="text-center w-1/2">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero,
+            iusto? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero,
+            iusto?
+          </p>
+        </div>
+        <div class="flex flex-col gap-6 items-center">
+          <h3 class="text-2xl font-bold">Contact Us</h3>
+          <div class="flex flex-col gap-6 items-start">
+            <div>
+              <i class="fa-solid fa-house primary-color"></i>
+              <span> 4710-4890 Breckinridge USA</span>
+            </div>
+            <div>
+              <i class="fa-solid fa-envelope primary-color"></i>
+              <span> demo@yourdomain.com</span>
+            </div>
+            <div>
+              <i class="fa-solid fa-phone primary-color"></i>
+              <span> (012) 800 456 789-987</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-5 items-center">
+          <h3 class="text-2xl font-bold">Information</h3>
+          <div class="flex flex-col gap-5">
+            <span>Terms of Service</span>
+            <span>Privacy Policy</span>
+            <span>Refund Policy</span>
+          </div>
+        </div>
+        <div class="flex flex-col gap-7 items-center">
+          <h3 class="text-2xl font-bold">Follow Us</h3>
+          <div class="flex gap-7">
+            <i class="fa-brands fa-instagram text-3xl primary-color"></i>
+            <i class="fa-brands fa-telegram text-3xl primary-color"></i>
+            <i class="fa-brands fa-linkedin text-3xl primary-color"></i>
+            <i class="fa-brands fa-whatsapp text-3xl primary-color"></i>
           </div>
         </div>
       </div>

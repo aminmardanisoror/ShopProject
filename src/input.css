@@ -6,5 +6,11 @@
     .container-primary {
       @apply max-w-screen-xl mx-auto;
     }
+    .primary-color {
+      color: #b400ae;
+    }
+    .bg-primary {
+      background-color: #b400ae;
+    }
   }
 
