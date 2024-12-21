@@ -7,10 +7,14 @@
       @apply max-w-screen-xl mx-auto;
     }
     .primary-color {
-      color: #b400ae;
+      /* color: #63005f; */
+      color: black;
+      
     }
     .bg-primary {
-      background-color: #b400ae;
+      /* background-color: #b400ae; */
+      background-color: black;
+    
     }
   }
 
