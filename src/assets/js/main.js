@@ -39,11 +39,15 @@ breakpoints: {
   0: {
     slidesPerView:2,
   },
-  500: {
+  
+  700: {
     slidesPerView:3,
   },
   960: {
     slidesPerView:4,
+  },
+  1280: {
+    slidesPerView:6,
   },
  
 },
@@ -75,7 +79,7 @@ const thirdSwiper = new Swiper("#thirdSwiper", {
       slidesPerView:3,
     },
     960: {
-      slidesPerView:4,
+      slidesPerView:5,
     },
    
   },
@@ -151,7 +155,38 @@ const fifthSwiper = new Swiper("#fifthSwiper", {
   },
 
 });
-fifthSwiper
+// ================================================================
+const sixthSwiper = new Swiper("#sixthSwiper", {
+  // Optional parameters
+
+  loop: true,
+  speed: 900,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: true,
+    
+  },
+  spaceBetween:25,
+
+  breakpoints: {
+    0: {
+      slidesPerView:2,
+    },
+    500: {
+      slidesPerView:3,
+    },
+    960: {
+      slidesPerView:5,
+    },
+   
+  },
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+});
 // ================================================================
 const mainPageProductsContainer = document.getElementById("main-page-products");
 const root = document.getElementById("main-page-products");

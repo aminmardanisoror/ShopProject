@@ -8,12 +8,12 @@
     }
     .primary-color {
       /* color: #63005f; */
-      color: black;
+      color: rgb(196, 170, 26);
       
     }
     .bg-primary {
       /* background-color: #b400ae; */
-      background-color: black;
+      background-color: #cebc51
     
     }
   }
