@@ -114,6 +114,9 @@ const fourthSwiper = new Swiper("#fourthSwiper", {
     960: {
       slidesPerView:5,
     },
+    1280: {
+      slidesPerView:6,
+    },
    
   },
   // If we need pagination
@@ -146,6 +149,9 @@ const fifthSwiper = new Swiper("#fifthSwiper", {
     960: {
       slidesPerView:5,
     },
+    1280: {
+      slidesPerView:6,
+    },
    
   },
   // If we need pagination
@@ -177,6 +183,10 @@ const sixthSwiper = new Swiper("#sixthSwiper", {
     },
     960: {
       slidesPerView:5,
+    },
+   
+    1400: {
+      slidesPerView:7,
     },
    
   },

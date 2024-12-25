@@ -7,14 +7,19 @@
       @apply max-w-screen-xl mx-auto;
     }
     .primary-color {
-      /* color: #63005f; */
+      
       color: rgb(196, 170, 26);
+      /* color: purple; */
+     
       
     }
     .bg-primary {
       /* background-color: #b400ae; */
-      background-color: #cebc51
+      background-color: white
     
+    }
+    .borderClr-primary {
+      border-color: rgb(196, 170, 26);
     }
   }
 
