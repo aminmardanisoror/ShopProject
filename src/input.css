@@ -9,8 +9,8 @@
     .primary-color {
       
       color: rgb(196, 170, 26);
-      /* color: purple; */
-     
+      
+      /* color: #b400ae; */
       
     }
     .bg-primary {
@@ -20,6 +20,7 @@
     }
     .borderClr-primary {
       border-color: rgb(196, 170, 26);
+      /* border-color: #b400ae; */
     }
   }
 

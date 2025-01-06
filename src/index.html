@@ -61,9 +61,11 @@
 header
 ======= -->
     <header class=" ">
-      <div class="py-1  bg-primary border-b-4 borderClr-primary max-w-screen-2xl mx-auto">
+      <div
+        class="py-1 bg-primary border-b-4 borderClr-primary max-w-screen-2xl mx-auto"
+      >
         <div
-          class="navbar flex items-center justify-between px-4 sm:pt-7 pb-2 max-w-screen-2xl mx-auto "
+          class="navbar flex items-center justify-between px-4 sm:pt-7 pb-2 max-w-screen-2xl mx-auto"
         >
           <div class="flex gap-7 text-xl items-center">
             <div class="flex gap-3 text-xl items-center">
@@ -180,15 +182,17 @@ Our Products
         <div class="flex flex-col max-w-screen-2xl mx-auto justify-center">
           <div>
             <div class="flex flex-col gap-2">
-              <h1 class="text-3xl md:text-4xl primary-color">محصولات ما</h1>
+              <h1 class="text-3xl md:text-4xl font-bold primary-color">
+                محصولات ما
+              </h1>
               <span class="text-lg md:text-xl md:font-bold"
                 >محصولات ما را به لیست هفتگی اضافه کنید</span
               >
             </div>
             <div
-              class="flex gap-4 sm:gap-10 justify-center mt-8  md:text-3xl text-2xl"
+              class="flex gap-4 sm:gap-10 justify-center mt-8 md:text-3xl text-2xl"
             >
-              <span >نقره </span>
+              <span>نقره </span>
               <span>برنز</span>
               <span>الماس</span>
               <span>طلا</span>
@@ -198,83 +202,13 @@ Our Products
       secondSwiper    
       ===============   -->
           <div class="mt-10 flex justify-end items-center gap-3">
-            <a class="text-xl " href="">مشاهده بیشتر</a>
+            <a class="text-xl" href="">مشاهده بیشتر</a>
             <i class="fa-solid fa-chevron-left primary-color"></i>
           </div>
           <div class="swiper mt-3 relative shadow" id="secondSwiper">
             <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper" id="sowiperTwo">
               <!-- Slides -->
-              <div class="swiper-slide">
-                <div class="border borderClr-primary pb-5 shadow-lg">
-                  <img src="./assets/imgs/swiper2/earring1.webp" alt="" />
-                  <div class="flex flex-col gap-3 mt-3">
-                    <span>type 1</span>
-                    <span class="primary-color">Lorem ipsum dolor sit</span>
-                    <span>100.000</span>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="border borderClr-primary pb-5 shadow-lg">
-                  <img src="./assets/imgs/swiper2/earring2.webp" alt="" />
-                  <div class="flex flex-col gap-3 mt-3">
-                    <span>type 1</span>
-                    <span class="primary-color">Lorem ipsum dolor sit</span>
-                    <span>100.000</span>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="border borderClr-primary pb-5 shadow-lg">
-                  <img src="./assets/imgs/swiper2/earring1.webp" alt="" />
-                  <div class="flex flex-col gap-3 mt-3">
-                    <span>type 1</span>
-                    <span class="primary-color">Lorem ipsum dolor sit</span>
-                    <span>100.000</span>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="border borderClr-primary pb-5 shadow-lg">
-                  <img src="./assets/imgs/swiper2/earring3.webp" alt="" />
-                  <div class="flex flex-col gap-3 mt-3">
-                    <span>type 1</span>
-                    <span class="primary-color">Lorem ipsum dolor sit</span>
-                    <span>100.000</span>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="border borderClr-primary pb-5 shadow-lg">
-                  <img src="./assets/imgs/swiper2/earring1.webp" alt="" />
-                  <div class="flex flex-col gap-3 mt-3">
-                    <span>type 1</span>
-                    <span class="primary-color">Lorem ipsum dolor sit</span>
-                    <span>100.000</span>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="border borderClr-primary pb-5 shadow-lg">
-                  <img src="./assets/imgs/swiper2/earring4.webp" alt="" />
-                  <div class="flex flex-col gap-3 mt-3">
-                    <span>type 1</span>
-                    <span class="primary-color">Lorem ipsum dolor sit</span>
-                    <span>100.000</span>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="border borderClr-primary pb-5 shadow-lg">
-                  <img src="./assets/imgs/swiper2/earring5.webp" alt="" />
-                  <div class="flex flex-col gap-3 mt-3">
-                    <span>type 1</span>
-                    <span class="primary-color">Lorem ipsum dolor sit</span>
-                    <span>100.000</span>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -285,85 +219,13 @@ Our Products
     ===============   -->
     <div class="max-w-screen-2xl w-11/12 mx-auto">
       <div class="mt-20 flex justify-end items-center gap-3">
-        <a class="text-xl " href="">مشاهده بیشتر</a>
+        <a class="text-xl" href="">مشاهده بیشتر</a>
         <i class="fa-solid fa-chevron-left primary-color"></i>
       </div>
       <div class="swiper mt-3 shadow" id="thirdSwiper">
         <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
+        <div class="swiper-wrapper" id="sowiperThree">
           <!-- Slides -->
-          <div class="swiper-slide">
-            <div class="border borderClr-primary pb-5 text-center">
-              <img src="./assets/imgs/swiper3/necklace1.png" alt="" />
-              <div class="flex flex-col gap-3 mt-3">
-                <span>type 1</span>
-                <span class="primary-color">Lorem ipsum dolor sit</span>
-                <span>100.000</span>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="border borderClr-primary pb-5 shadow-lg text-center">
-              <img src="./assets/imgs/swiper3/necklace2.png" alt="" />
-              <div class="flex flex-col gap-3 mt-3">
-                <span>type 1</span>
-                <span class="primary-color">Lorem ipsum dolor sit</span>
-                <span>100.000</span>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="border borderClr-primary pb-5 shadow-lg text-center">
-              <img src="./assets/imgs/swiper3/necklace3.png" alt="" />
-              <div class="flex flex-col gap-3 mt-3">
-                <span>type 1</span>
-                <span class="primary-color">Lorem ipsum dolor sit</span>
-                <span>100.000</span>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="border borderClr-primary pb-5 shadow-lg text-center">
-              <img src="./assets/imgs/swiper3/necklace4.png" alt="" />
-              <div class="flex flex-col gap-3 mt-3">
-                <span>type 1</span>
-                <span class="primary-color">Lorem ipsum dolor sit</span>
-                <span>100.000</span>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="border borderClr-primary pb-5 shadow-lg text-center">
-              <img src="./assets/imgs/swiper3/necklace5.png" alt="" />
-              <div class="flex flex-col gap-3 mt-3">
-                <span>type 1</span>
-                <span class="primary-color">Lorem ipsum dolor sit</span>
-                <span>100.000</span>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div
-              class="border borderClr-primary pb-5 shadow-lg text-center  hover:shadow-2xl"
-            >
-              <img src="./assets/imgs/swiper3/necklace1.png" alt="" />
-              <div class="flex flex-col gap-3 mt-3">
-                <span>type 1</span>
-                <span class="primary-color">Lorem ipsum dolor sit</span>
-                <span>100.000</span>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="border borderClr-primary pb-5 shadow-lg text-center">
-              <img src="./assets/imgs/swiper3/necklace2.png" alt="" />
-              <div class="flex flex-col gap-3 mt-3">
-                <span>type 1</span>
-                <span class="primary-color">Lorem ipsum dolor sit</span>
-                <span>100.000</span>
-              </div>
-            </div>
-          </div>
         </div>
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
@@ -372,7 +234,7 @@ Our Products
     <!-- ===============
       چهارخونه
     ===============   -->
-    <div class="bg-zinc-100 ">
+    <div class="bg-zinc-100">
       <div
         class="grid md:grid-cols-2 gap-4 mt-5 md:mt-20 container-primary w-11/12 mx-auto py-3 md:py-20"
       >
@@ -423,41 +285,57 @@ Our Products
      جدیدترین ها
     ===============   -->
     <div class="md:mt-20 mt-5">
-     <div class="max-w-screen-2xl mx-auto">
-      <a
-      class="block mx-auto text-3xl md:mb-10 mb-4 border-b-4 w-fit primary-color"
-      href=""
-      >جدید ترین ها
-    </a>
-    <div class="flex flex-col gap-5 w-11/12 mx-auto md:flex-row md:flex">
-      <div class="relative">
-        <img class="w-full" src="./assets/imgs/Category-8.jpg" alt="" />
-        <div class="absolute bottom-8 left-4">
-          <span class="text-white text-2xl">گوشواره</span>
-        </div>
-      </div>
-      <div class="flex gap-5 flex-col">
-        <div class="relative">
-          <img class="w-full" src="./assets/imgs/Category-7.jpg" alt="" />
-          <div class="absolute bottom-8 left-4">
-            <span class="text-white text-2xl">گردنبند</span>
+      <div class="max-w-screen-2xl mx-auto">
+        <a
+          class="block mx-auto md:mb-10 mb-4 border-b-4 w-fit md:text-3xl text-lg font-bold primary-color"
+          href=""
+          >جدید ترین ها
+        </a>
+        <div class="flex flex-col gap-5 w-11/12 mx-auto md:flex-row md:flex">
+          <div class="relative shadow-xl">
+            <img
+              class="w-full border borderClr-primary h-full"
+              src="./assets/imgs/Category-8.jpg"
+              alt=""
+            />
+            <div class="absolute bottom-8 left-4">
+              <span class="text-white text-2xl">گوشواره</span>
+            </div>
+          </div>
+          <div class="flex gap-5 flex-col">
+            <div class="relative shadow-xl">
+              <img
+                class="w-full border borderClr-primary"
+                src="./assets/imgs/Category-7.jpg"
+                alt=""
+              />
+              <div class="absolute bottom-8 left-4">
+                <span class="text-white text-2xl">گردنبند</span>
+              </div>
+            </div>
+            <div class="relative shadow-xl">
+              <img
+                class="w-full border borderClr-primary"
+                src="./assets/imgs/Category-5.jpg"
+                alt=""
+              />
+              <div class="absolute bottom-8 left-4">
+                <span class="text-white text-2xl">انگشتر</span>
+              </div>
+            </div>
+          </div>
+          <div class="relative shadow-xl">
+            <img
+              class="w-full border borderClr-primary h-full"
+              src="./assets/imgs/Category-6.jpg"
+              alt=""
+            />
+            <div class="absolute bottom-8 left-4">
+              <span class="text-white text-2xl">دست بند</span>
+            </div>
           </div>
         </div>
-        <div class="relative">
-          <img class="w-full" src="./assets/imgs/Category-5.jpg" alt="" />
-          <div class="absolute bottom-8 left-4">
-            <span class="text-white text-2xl">انگشتر</span>
-          </div>
-        </div>
       </div>
-      <div class="relative">
-        <img class="w-full" src="./assets/imgs/Category-6.jpg" alt="" />
-        <div class="absolute bottom-8 left-4">
-          <span class="text-white text-2xl">دست بند</span>
-        </div>
-      </div>
-    </div>
-     </div>
     </div>
 
     <!-- ===============
@@ -475,93 +353,14 @@ Our Products
         </div>
         <div class="max-w-screen-2xl mx-auto">
           <div class="md:mt-10 mt-4 flex justify-end items-center gap-3">
-            <a class="text-xl primary-color" href="">مشاهده بیشتر</a>
-            <i class="fa-solid fa-chevron-left"></i>
+            <a class="text-xl" href="">مشاهده بیشتر</a>
+            <i class="fa-solid fa-chevron-left primary-color"></i>
           </div>
           <div class="swiper mt-3 shadow" id="fourthSwiper">
             <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper" id="swiperFour">
               <!-- Slides -->
-              <div class="swiper-slide shadow-2xl">
-                <div class="border borderClr-primary pb-5 text-center">
-                  <img src="./assets/imgs/swiper4,5/ring1.png" alt="" />
-                  <div class="flex flex-col gap-3 mt-3">
-                    <span>type 1</span>
-                    <span class="primary-color">Lorem ipsum dolor sit</span>
-                    <span>100.000</span>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide shadow-2xl">
-                <div class="border borderClr-primary pb-5 text-center">
-                  <img src="./assets/imgs/swiper4,5/ring2.png" alt="" />
-                  <div class="flex flex-col gap-3 mt-3">
-                    <span>type 1</span>
-                    <span class="primary-color">Lorem ipsum dolor sit</span>
-                    <span>100.000</span>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide shadow-2xl">
-                <div class="border borderClr-primary pb-5 text-center">
-                  <img src="./assets/imgs/swiper4,5/ring3.png" alt="" />
-                  <div class="flex flex-col gap-3 mt-3">
-                    <span>type 1</span>
-                    <span class="primary-color">Lorem ipsum dolor sit</span>
-                    <span>100.000</span>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide shadow-2xl">
-                <div class="border borderClr-primary pb-5 text-center">
-                  <img src="./assets/imgs/swiper4,5/ring4.png" alt="" />
-                  <div class="flex flex-col gap-3 mt-3">
-                    <span>type 1</span>
-                    <span class="primary-color">Lorem ipsum dolor sit</span>
-                    <span>100.000</span>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide shadow-2xl">
-                <div class="border borderClr-primary pb-5 text-center">
-                  <img src="./assets/imgs/swiper4,5/ring5.png" alt="" />
-                  <div class="flex flex-col gap-3 mt-3">
-                    <span>type 1</span>
-                    <span class="primary-color">Lorem ipsum dolor sit</span>
-                    <span>100.000</span>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide shadow-2xl">
-                <div class="border borderClr-primary pb-5 text-center">
-                  <img src="./assets/imgs/swiper4,5/ring6.png" alt="" />
-                  <div class="flex flex-col gap-3 mt-3">
-                    <span>type 1</span>
-                    <span class="primary-color">Lorem ipsum dolor sit</span>
-                    <span>100.000</span>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide shadow-2xl">
-                <div class="border borderClr-primary pb-5 text-center">
-                  <img src="./assets/imgs/swiper4,5/ring7.png" alt="" />
-                  <div class="flex flex-col gap-3 mt-3">
-                    <span>type 1</span>
-                    <span class="primary-color">Lorem ipsum dolor sit</span>
-                    <span>100.000</span>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide shadow-2xl">
-                <div class="border borderClr-primary pb-5 text-center">
-                  <img src="./assets/imgs/swiper4,5/ring8.png" alt="" />
-                  <div class="flex flex-col gap-3 mt-3">
-                    <span>type 1</span>
-                    <span class="primary-color">Lorem ipsum dolor sit</span>
-                    <span>100.000</span>
-                  </div>
-                </div>
-              </div>
+        
             </div>
           </div>
           <div class="swiper mt-7 shadow" id="fifthSwiper">
@@ -662,28 +461,44 @@ Our Products
               <div class="flex flex-col items-center text-left gap-5">
                 <span class="text-2xl">خاص ترین ها</span>
                 <a
-                  class="border-2 py-2 px-6 borderClr-primary text-center w-fit mx-auto  text-xl"
+                  class="border-2 py-2 px-6 borderClr-primary text-center w-fit mx-auto text-xl"
                   href=""
                   >مشاهده بیشتر</a
                 >
               </div>
-              <img src="./assets/imgs/curtain-3.webp" alt="" />
+              <img
+                class="border borderClr-primary"
+                src="./assets/imgs/curtain-3.webp"
+                alt=""
+              />
             </div>
             <div class="flex justify-end">
-              <img class=" " src="./assets/imgs/curtain-2.webp" alt="" />
+              <img
+                class="border borderClr-primary"
+                src="./assets/imgs/curtain-2.webp"
+                alt=""
+              />
             </div>
           </div>
 
           <div class="second flex flex-col gap-5">
             <div>
-              <img src="./assets/imgs/curtain-1.webp" alt="" />
+              <img
+                class="border borderClr-primary"
+                src="./assets/imgs/curtain-1.webp"
+                alt=""
+              />
             </div>
             <div class="flex items-center gap-5">
-              <img src="./assets/imgs/curtain-5.webp" alt="" />
+              <img
+                class="border borderClr-primary"
+                src="./assets/imgs/curtain-5.webp"
+                alt=""
+              />
               <div class="flex flex-col gap-5 items-center text-left">
                 <span class="text-2xl">خاص ترین ها</span>
                 <a
-                  class="border-2 py-2 px-6  text-center w-fit mx-auto borderClr-primary text-xl"
+                  class="border-2 py-2 px-6 text-center w-fit mx-auto borderClr-primary text-xl"
                   href=""
                   >مشاهده بیشتر</a
                 >
@@ -696,15 +511,31 @@ Our Products
       <div class="xl:hidden">
         <div class="flex flex-col md:gap-8 gap-4">
           <div class="grid grid-cols-2 gap-4 w-10/12 mx-auto max-w-screen-md">
-            <img src="./assets/imgs/curtain-1.webp" alt="" />
-            <img src="./assets/imgs/curtain-2.webp" alt="" />
-            <img src="./assets/imgs/curtain-3.webp" alt="" />
-            <img src="./assets/imgs/curtain-5.webp" alt="" />
+            <img
+              class="border borderClr-primary"
+              src="./assets/imgs/curtain-1.webp"
+              alt=""
+            />
+            <img
+              class="border borderClr-primary"
+              src="./assets/imgs/curtain-2.webp"
+              alt=""
+            />
+            <img
+              class="border borderClr-primary"
+              src="./assets/imgs/curtain-3.webp"
+              alt=""
+            />
+            <img
+              class="border borderClr-primary"
+              src="./assets/imgs/curtain-5.webp"
+              alt=""
+            />
           </div>
           <div class="flex flex-col text-center md:gap-6 gap-2">
             <span class="font-bold">خاص ترین ها</span>
             <a
-              class="border-2 py-2 px-6 borderClr-primary text-center w-fit mx-auto "
+              class="border-2 py-2 px-6 borderClr-primary text-center w-fit mx-auto"
               href=""
               >مشاهده بیشتر</a
             >
@@ -719,8 +550,8 @@ Our Products
     <div class="md:mt-20 mt-5 w-10/12 mx-auto">
       <div class="max-w-screen-2xl mx-auto">
         <div class="mt-10 flex justify-end items-center gap-3">
-          <a class="text-xl primary-color" href="">مشاهده بیشتر</a>
-          <i class="fa-solid fa-chevron-left"></i>
+          <a class="text-xl" href="">مشاهده بیشتر</a>
+          <i class="fa-solid fa-chevron-left primary-color"></i>
         </div>
         <div class="swiper mt-3" id="sixthSwiper">
           <!-- Additional required wrapper -->
@@ -833,7 +664,9 @@ Our Products
     <!-- ===============
     Footer   
     ===============   -->
-    <div class="footer bg-zinc-100 mt-20 py-10 xl:py-20">
+    <div
+      class="footer bg-zinc-100 mt-20 py-10 xl:py-20 border-t-2 borderClr-primary"
+    >
       <!-- <div class="w-10/12 mx-auto max-w-screen-sm md:hidden">
         <div>
           <img class="" src="./assets/imgs/logo_corano_125x.webp" alt="" />
@@ -867,17 +700,18 @@ Our Products
         </div>
       </div> -->
       <div
-        class="flex flex-col gap-10 md:grid-cols-2 md:grid xl:grid-cols-4 container-primary "
+        class="flex flex-col gap-10 sm:grid-cols-2 sm:grid xl:grid-cols-4 container-primary px-4"
       >
-        <div class="md:items-start items-center flex flex-col gap-6">
-          <img src="./assets/imgs/logo_corano_125x.webp" alt="" />
-          <p class=" w-10/12 md:w-1/2 xl:w-full">
-            و با استانداردهای جهانی و در بازار بین المللی ارائه کنگروه تولیدی
-            هنری اِلون، بزرگ ترین تولیده ک اصالت ایرانی را به به کار گیری بیشتر
-            از صد متخصص و تنها در عرض 12 سال به محصولی ارزنده د
-          </p>
+        <div class="flex flex-col gap-7 items-center xl:items-start">
+          <h3 class="text-2xl font-bold">ما را دنبال کنید</h3>
+          <div class="flex gap-7">
+            <i class="fa-brands fa-instagram text-3xl primary-color"></i>
+            <i class="fa-brands fa-telegram text-3xl primary-color"></i>
+            <i class="fa-brands fa-linkedin text-3xl primary-color"></i>
+            <i class="fa-brands fa-whatsapp text-3xl primary-color"></i>
+          </div>
         </div>
-        <div class="flex flex-col gap-6 md:items-center">
+        <div class="flex flex-col gap-6 items-center xl:items-start">
           <h3 class="text-2xl font-bold">تماس با ما</h3>
           <div class="flex flex-col gap-6 items-start">
             <div>
@@ -894,7 +728,7 @@ Our Products
             </div>
           </div>
         </div>
-        <div class="flex flex-col gap-5 md:items-center">
+        <div class="flex flex-col gap-5 items-center xl:items-start">
           <h3 class="text-2xl font-bold">اطلاعات</h3>
           <div class="flex flex-col gap-5">
             <span>شرایط خدمات </span>
@@ -902,14 +736,14 @@ Our Products
             <span>سیاست بازپرداخت </span>
           </div>
         </div>
-        <div class="flex flex-col gap-7 md:items-center">
-          <h3 class="text-2xl font-bold">ما را دنبال کنید</h3>
-          <div class="flex gap-7">
-            <i class="fa-brands fa-instagram text-3xl primary-color"></i>
-            <i class="fa-brands fa-telegram text-3xl primary-color"></i>
-            <i class="fa-brands fa-linkedin text-3xl primary-color"></i>
-            <i class="fa-brands fa-whatsapp text-3xl primary-color"></i>
-          </div>
+
+        <div class="xl:items-start items-center flex flex-col gap-6">
+          <img src="./assets/imgs/logo_corano_125x.webp" alt="" />
+          <p class="w-10/12 md:w-1/2 xl:w-full">
+            و با استانداردهای جهانی و در بازار بین المللی ارائه کنگروه تولیدی
+            هنری اِلون، بزرگ ترین تولیده ک اصالت ایرانی را به به کار گیری بیشتر
+            از صد متخصص و تنها در عرض 12 سال به محصولی ارزنده د
+          </p>
         </div>
       </div>
     </div>
