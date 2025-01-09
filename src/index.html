@@ -61,6 +61,42 @@
 header
 ======= -->
     <header class=" ">
+      <nav
+        class="bg-secondary h-[100vh] max-w-56 w-full fixed top-0 right-0 z-10 translate-x-full lg:hidden  duration-200"
+        id="navbar"
+      >
+        <div>
+          <div class="text-end me-3 pt-3">
+            <i class="fa-solid fa-xmark" id="xmark"></i>
+          </div>
+          <ul class="flex flex-col gap-3 font-bold text-xl">
+            <li>
+              <i class="fa-solid fa-house"></i>
+              خانه
+            </li>
+            <li>
+              <i class="fa-solid fa-handshake"></i>
+              همکاری باما
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              تماس باما
+            </li>
+            <li>
+              <i class="fa-solid fa-chalkboard-user"></i>
+              محصولات
+            </li>
+            <li>
+              <i class="fa-solid fa-sack-dollar"></i>
+              فروش ویژه
+            </li>
+            <li>
+              <i class="fa-solid fa-cart-shopping"></i>
+              سبد خرید
+            </li>
+          </ul>
+        </div>
+      </nav>
       <div
         class="py-1 bg-primary border-b-4 borderClr-primary max-w-screen-2xl mx-auto"
       >
@@ -69,7 +105,7 @@ header
         >
           <div class="flex gap-7 text-xl items-center">
             <div class="flex gap-3 text-xl items-center">
-              <a href=""><i class="fa-solid fa-bars lg:hidden"></i></a>
+              <i class="fa-solid fa-bars lg:hidden cursor-pointer" id="bars"></i>
               <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
               <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
               <a href=""> <i class="fa-solid fa-heart hidden lg:block"></i></a>
@@ -360,7 +396,6 @@ Our Products
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper" id="swiperFour">
               <!-- Slides -->
-        
             </div>
           </div>
           <div class="swiper mt-7 shadow" id="fifthSwiper">

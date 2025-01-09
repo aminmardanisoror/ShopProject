@@ -1,4 +1,3 @@
-
 // ==========
 // data
 // ==========
@@ -199,7 +198,6 @@ let necklace = [
       count: 120,
     },
   },
- 
 ];
 
 let ring = [
@@ -394,7 +392,6 @@ renderRings(ring);
 // ==========
 // end of functions
 // ==========
-
 
 // ==========
 // swipers
@@ -592,3 +589,26 @@ const sixthSwiper = new Swiper("#sixthSwiper", {
 // ==========
 // end of swipers
 // ==========
+
+// =========
+// navbar
+// =========
+const navbar = document.getElementById("navbar");
+const bars = document.getElementById("bars");
+const xmark = document.getElementById("xmark")
+
+
+
+function activeNavbar(){
+  navbar.classList.remove("translate-x-full")
+}
+function deactiveNavbar(){
+  navbar.classList.add("translate-x-full")
+}
+
+
+bars.addEventListener('click', activeNavbar)
+xmark.addEventListener('click', deactiveNavbar)
+// =========
+// end of navbar
+// =========

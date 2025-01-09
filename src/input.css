@@ -16,7 +16,9 @@
     .bg-primary {
       /* background-color: #b400ae; */
       background-color: white
-    
+    }
+    .bg-secondary {
+      background-color: rgb(210, 199, 140);
     }
     .borderClr-primary {
       border-color: rgb(196, 170, 26);
