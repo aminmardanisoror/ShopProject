@@ -595,20 +595,22 @@ const sixthSwiper = new Swiper("#sixthSwiper", {
 // =========
 const navbar = document.getElementById("navbar");
 const bars = document.getElementById("bars");
-const xmark = document.getElementById("xmark")
+const xmark = document.getElementById("xmark");
+const oneSwiper = document.getElementById("oneSwiper");
 
-
-
-function activeNavbar(){
-  navbar.classList.remove("translate-x-full")
+function activeNavbar() {
+  navbar.classList.remove("translate-x-full");
+  
+  oneSwiper.classList.add("blackAll");
+  
 }
-function deactiveNavbar(){
-  navbar.classList.add("translate-x-full")
+function deactiveNavbar() {
+  navbar.classList.add("translate-x-full");
+  oneSwiper.classList.remove("blackAll");
 }
 
-
-bars.addEventListener('click', activeNavbar)
-xmark.addEventListener('click', deactiveNavbar)
+bars.addEventListener("click", activeNavbar);
+xmark.addEventListener("click", deactiveNavbar);
 // =========
 // end of navbar
 // =========

@@ -18,7 +18,7 @@
     />
     <script src="./assets/js/main.js" defer></script>
   </head>
-  <body class="">
+  <body class=" " id="body">
     <!-- <main
       id="main-page-products"
       class="container-primary mt-8 md:gap-6 md:flex md:justify-center"
@@ -58,19 +58,19 @@
       href=""
       >همه محصولات</a -->
     <!-- =======
-header
+navbar
 ======= -->
-    <header class=" ">
-      <nav
-        class="bg-secondary h-[100vh] max-w-56 w-full fixed top-0 right-0 z-10 translate-x-full lg:hidden  duration-200"
-        id="navbar"
-      >
-        <div>
-          <div class="text-end me-3 pt-3">
-            <i class="fa-solid fa-xmark" id="xmark"></i>
+    <nav
+      class="bg-secondary pt-5 h-[100vh] max-w-60 sm:max-w-80 w-full fixed top-0 right-0 z-20 translate-x-full lg:hidden duration-200 shadow-md"
+      id="navbar"
+    >
+      <div>
+        <div class="px-3">
+          <div class="text-end">
+            <i class="fa-solid fa-xmark text-2xl cursor-pointer" id="xmark"></i>
           </div>
-          <ul class="flex flex-col gap-3 font-bold text-xl">
-            <li>
+          <ul class="flex flex-col gap-5 font-bold sm:text-xl">
+            <li class="hover:bg-black hover:ps-3 hover:text-white">
               <i class="fa-solid fa-house"></i>
               خانه
             </li>
@@ -94,18 +94,50 @@ header
               <i class="fa-solid fa-cart-shopping"></i>
               سبد خرید
             </li>
+            <li>
+              <i class="fa-solid fa-user"></i>
+              ورود / ثبت نام
+            </li>
+            <li>
+              <i class="fa-solid fa-house"></i>
+              021-123456789
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              demo@yourdomain.com
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              (012) 800 456 789-987
+            </li>
           </ul>
         </div>
-      </nav>
+        <div class="px-3 sm:text-3xl">
+          <div class="flex gap-7 mt-10">
+            <i class="fa-brands fa-instagram text-xl"></i>
+            <i class="fa-brands fa-telegram text-xl"></i>
+            <i class="fa-brands fa-linkedin text-xl"></i>
+            <i class="fa-brands fa-whatsapp text-xl"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- =======
+header
+======= -->
+    <header class="sticky top-0 z-10 ">
       <div
-        class="py-1 bg-primary border-b-4 borderClr-primary max-w-screen-2xl mx-auto"
+        class="py-1 bg-primary  max-w-screen-2xl mx-auto  border-b-4 borderClr-primary"
       >
         <div
-          class="navbar flex items-center justify-between px-4 sm:pt-7 pb-2 max-w-screen-2xl mx-auto"
+          class="navbar flex items-center justify-between px-4 pb-2 max-w-screen-2xl mx-auto "
         >
           <div class="flex gap-7 text-xl items-center">
             <div class="flex gap-3 text-xl items-center">
-              <i class="fa-solid fa-bars lg:hidden cursor-pointer" id="bars"></i>
+              <i
+                class="fa-solid fa-bars lg:hidden cursor-pointer"
+                id="bars"
+              ></i>
               <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
               <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
               <a href=""> <i class="fa-solid fa-heart hidden lg:block"></i></a>
@@ -131,47 +163,33 @@ header
           </div>
           <div><img src="./assets/imgs/logo_corano_125x.webp" alt="" /></div>
         </div>
-        <div class="border-t-2 borderClr-primary">
-          <div class="swiper" id="firstSwiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">
-                <img class="min-h-48" src="./assets/imgs/titr1.png" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img class="min-h-48" src="./assets/imgs/titr2.png" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img class="min-h-48" src="./assets/imgs/titr3.png" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img class="min-h-48" src="./assets/imgs/titr4.png" alt="" />
-              </div>
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination primary-color"></div>
-          </div>
-        </div>
       </div>
-      <!-- <div class="slider">
-
-        <div class="owl-carousel">
-          <div>
-            <img class="bg-auto" src="./assets/imgs/titr1.webp" alt="" />
+    </header>
+    <!-- =======
+first swiper
+======= -->
+    <div class="border-b-4 borderClr-primary max-w-screen-2xl mx-auto" id="oneSwiper">
+      <div class="swiper" id="firstSwiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img class="min-h-48" src="./assets/imgs/titr1.png" alt="" />
           </div>
-          <div>
-            <img class="bg-auto" src="./assets/imgs/titr2.webp" alt="" />
+          <div class="swiper-slide">
+            <img class="min-h-48" src="./assets/imgs/titr2.png" alt="" />
           </div>
-          <div>
-            <img class="bg-auto" src="./assets/imgs/titr3.webp" alt="" />
+          <div class="swiper-slide">
+            <img class="min-h-48" src="./assets/imgs/titr3.png" alt="" />
           </div>
-          <div>
-            <img class="bg-auto" src="./assets/imgs/titr4.webp" alt="" />
+          <div class="swiper-slide">
+            <img class="min-h-48" src="./assets/imgs/titr4.png" alt="" />
           </div>
         </div>
-      </div> -->
-    </header>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination primary-color"></div>
+      </div>
+    </div>
     <!-- =======
 support
 ======= -->
@@ -699,7 +717,7 @@ Our Products
     <!-- ===============
     Footer   
     ===============   -->
-    <div
+    <footer
       class="footer bg-zinc-100 mt-20 py-10 xl:py-20 border-t-2 borderClr-primary"
     >
       <!-- <div class="w-10/12 mx-auto max-w-screen-sm md:hidden">
@@ -781,7 +799,7 @@ Our Products
           </p>
         </div>
       </div>
-    </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>

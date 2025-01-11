@@ -18,11 +18,16 @@
       background-color: white
     }
     .bg-secondary {
-      background-color: rgb(210, 199, 140);
+      /* background-color: rgb(210, 199, 140); */
+      background-color: rgb(214, 210, 187);
     }
     .borderClr-primary {
       border-color: rgb(196, 170, 26);
       /* border-color: #b400ae; */
     }
+    .blackAll {
+     opacity: 0.1;
+    }
+   
   }
 
