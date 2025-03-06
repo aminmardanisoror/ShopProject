@@ -1,44 +1,4 @@
 // ==========
-// login and register
-// ==========
-
-window.onload = function () {
-  let checkRegister = localStorage.getItem("register");
-  if (checkRegister == "true") {
-    let array = JSON.parse(localStorage.getItem("names"));
-
-    const lastItem = array[array.length - 1];
-
-    document.getElementById("nameChange").innerHTML = `<div class="text-sm">
-  <a id="logOut" class="hover:text-black" >خروج از حساب</a> | <span> ${lastItem.username} </span>
- </div> `;
-  } else if (checkRegister == "false") {
-    let checkLogin = localStorage.getItem("login");
-    if (checkLogin == "true") {
-      let lastLogin = JSON.parse(localStorage.getItem("packLogin"));
-      document.getElementById("nameChange").innerHTML = `<div class="text-sm">
-      <a id="logOut" class="hover:text-black" >خروج از حساب</a> | <span> ${lastLogin[0].username} </span>
-     </div> `;
-    }
-  }
-
-  let logOut = document.getElementById("logOut");
-
-  logOut.addEventListener("click", clearData);
-};
-function clearData() {
-  localStorage.setItem("login", false);
-  localStorage.setItem("register", false);
-  location.reload();
-}
-
-// ==========
-// end of login and register
-// ==========
-
-
-
-// ==========
 // data
 // ==========
 let earrings = [
@@ -151,7 +111,6 @@ let earrings = [
     },
   },
 ];
-
 
 let necklace = [
   {
@@ -351,275 +310,54 @@ let ring = [
   },
 ];
 
-
 // ==========
 // end of data
 // ==========
- 
-
-
 
 // ==========
-// functions
+// render products
 // ==========
+let productsTable = document.getElementById("productsTable");
+
+let type = localStorage.getItem("type");
 
 
-const sowiperTwo = document.getElementById("sowiperTwo");
-const sowiperThree = document.getElementById("sowiperThree");
-const swiperFour = document.getElementById("swiperFour");
-function renderproduct(products, element) {
+function renderProducts(products) {
   const template = products
     .map((product) => {
       return `
-  <div class="swiper-slide">
-                <div class="border borderClr-primary pb-5 shadow-lg">
+
+  <div class="border borderClr-primary pb-5 flex flex-col justify-center">
                   <img src="${product.image}" alt="" />
-                  <div class="flex flex-col gap-3 mt-3">
+                  <div class="flex flex-col gap-3 mt-3 text-center">
                     <span>${product.title}</span>
                     <span class="primary-color">${product.rating.rate}</span>
                     <span>${product.price}</span>
+                    
                   </div>
+                   <a
+                    href=""
+                    class="border w-max mx-auto py-1 borderClr-primary px-4"
+                    >خرید</a>
                 </div>
-              </div>
-
-
+                
 
 `;
     })
     .join("");
-
-  element.innerHTML = template;
+  productsTable.innerHTML = template;
 }
 
-renderproduct(earrings, sowiperTwo);
-renderproduct(necklace, sowiperThree);
-renderproduct(ring, swiperFour);
-
-// ==========
-// end of functions
-// ==========
-
-// ==========
-// swipers
-// ==========
-
-const firstswiper = new Swiper("#firstSwiper", {
-  // Optional parameters
-
-  loop: true,
-  speed: 900,
-  autoplay: {
-    delay: 3000,
-  },
-
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar",
-  },
-});
-// ================================================================
-const secondswiper = new Swiper("#secondSwiper", {
-  // Optional parameters
-
-  loop: true,
-  speed: 900,
-  autoplay: {
-    delay: 0,
-  },
-  slidesPerView: 2,
-  spaceBetween: 25,
-  breakpoints: {
-    0: {
-      slidesPerView: 2,
-    },
-
-    700: {
-      slidesPerView: 3,
-    },
-    960: {
-      slidesPerView: 4,
-    },
-    1280: {
-      slidesPerView: 6,
-    },
-  },
-
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
-// ================================================================
-const thirdSwiper = new Swiper("#thirdSwiper", {
-  // Optional parameters
-
-  loop: true,
-  speed: 900,
-  autoplay: {
-    delay: 0,
-    disableOnInteraction: true,
-    reverseDirection: true,
-  },
-  spaceBetween: 25,
-
-  breakpoints: {
-    0: {
-      slidesPerView: 2,
-    },
-    500: {
-      slidesPerView: 3,
-    },
-    960: {
-      slidesPerView: 5,
-    },
-  },
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
-
-// ================================================================
-const fourthSwiper = new Swiper("#fourthSwiper", {
-  // Optional parameters
-
-  loop: true,
-  speed: 900,
-  autoplay: {
-    delay: 0,
-    disableOnInteraction: true,
-    reverseDirection: true,
-  },
-  spaceBetween: 25,
-
-  breakpoints: {
-    0: {
-      slidesPerView: 2,
-    },
-    500: {
-      slidesPerView: 3,
-    },
-    960: {
-      slidesPerView: 5,
-    },
-    1280: {
-      slidesPerView: 6,
-    },
-  },
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
-// ================================================================
-const fifthSwiper = new Swiper("#fifthSwiper", {
-  // Optional parameters
-
-  loop: true,
-  speed: 900,
-  autoplay: {
-    delay: 0,
-    disableOnInteraction: true,
-  },
-  spaceBetween: 25,
-
-  breakpoints: {
-    0: {
-      slidesPerView: 2,
-    },
-    500: {
-      slidesPerView: 3,
-    },
-    960: {
-      slidesPerView: 5,
-    },
-    1280: {
-      slidesPerView: 6,
-    },
-  },
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
-// ================================================================
-const sixthSwiper = new Swiper("#sixthSwiper", {
-  // Optional parameters
-
-  loop: true,
-  speed: 900,
-  autoplay: {
-    delay: 0,
-    disableOnInteraction: true,
-  },
-  spaceBetween: 25,
-
-  breakpoints: {
-    0: {
-      slidesPerView: 2,
-    },
-    500: {
-      slidesPerView: 3,
-    },
-    960: {
-      slidesPerView: 5,
-    },
-
-    1400: {
-      slidesPerView: 7,
-    },
-  },
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
-
-// ==========
-// end of swipers
-// ==========
-
-
-// const nameChange = document.getElementsByClassName("nameChange");
-
-// function setName() {
-//   const name = localStorage.getItem("name");
-//   nameChange.innerHTML = name;
-// }
-// setName();
-
-
-// ========
-// مشاهده بیشتر
-// =======
-document.getElementById("clickSecondSwiper").onclick=function () {
-  localStorage.setItem("type",'earrings');
+if (type == "earrings") {
+  renderProducts(earrings);
 }
-document.getElementById("clickThirdSwiper").onclick=function () {
-  localStorage.setItem("type",'necklace');
+if (type == "necklace") {
+  renderProducts(necklace);
 }
-document.getElementById("clickFourthSwiper").onclick=function () {
-  localStorage.setItem("type",'ring');
+if (type == "ring") {
+  renderProducts(ring);
 }
 
-
-// ========
-// مشاهده بیشتر پایان
-// =======
+// ==========
+// end of render products
+// ==========

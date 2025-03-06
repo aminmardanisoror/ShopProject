@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+
+    <link
+      rel="stylesheet"
+      href="./assets/fonts/fontawesome-free-6.7.1-web/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="./assets/js/utility.js" defer></script>
+    <script src="./assets/js/products.js" defer></script>
+  </head>
+  <body class=" " id="body">
+    <!-- =======
+scrollToTop
+======= -->
+    <button
+      id="ToTopBtn"
+      class="shadow-lg border-2 borderClr-primary p-4 rounded-xl hidden z-50 bg-white fixed bottom-5 right-3"
+    >
+      <i class="fa-solid fa-arrow-up primary-color text-xl"></i>
+    </button>
+
+    <!-- =======
+navbar
+======= -->
+    <nav
+      class="nav pt-5 h-[100vh] max-w-60 sm:max-w-80 w-full fixed top-0 right-0 z-40 translate-x-full lg:hidden duration-200 shadow-md"
+      id="navbar"
+    >
+      <div>
+        <div class="px-3">
+          <div class="text-end">
+            <i class="fa-solid fa-xmark text-2xl cursor-pointer" id="xmark"></i>
+          </div>
+          <ul class="flex flex-col gap-5 font-bold sm:text-xl">
+            <li class="hover:bg-black hover:ps-3 hover:text-white">
+              <i class="fa-solid fa-house"></i>
+              خانه
+            </li>
+            <li>
+              <i class="fa-solid fa-handshake"></i>
+              همکاری باما
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              تماس باما
+            </li>
+            <li>
+              <i class="fa-solid fa-chalkboard-user"></i>
+              محصولات
+            </li>
+            <li>
+              <i class="fa-solid fa-sack-dollar"></i>
+              فروش ویژه
+            </li>
+            <li>
+              <i class="fa-solid fa-cart-shopping"></i>
+              سبد خرید
+            </li>
+            <li>
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-user"></i>
+                <div class="font-bold nameChange">
+                  <a class="inline" href="./login.html">ورود</a>
+                  <span>/</span>
+                  <a class="inline" href="./register.html">ثبت نام</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-house"></i>
+              021-123456789
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              demo@yourdomain.com
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              (012) 800 456 789-987
+            </li>
+          </ul>
+        </div>
+        <div class="px-3 sm:text-3xl">
+          <div class="flex gap-7 mt-10">
+            <i class="fa-brands fa-instagram text-xl"></i>
+            <i class="fa-brands fa-telegram text-xl"></i>
+            <i class="fa-brands fa-linkedin text-xl"></i>
+            <i class="fa-brands fa-whatsapp text-xl"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- =======
+header
+======= -->
+    <header class="sticky top-0 z-10">
+      <div
+        class="py-1 bg-primary max-w-screen-2xl mx-auto border-b-4 borderClr-primary"
+      >
+        <div
+          class="navbar flex items-center justify-between px-4 pb-2 max-w-screen-2xl mx-auto"
+        >
+          <div class="flex gap-7 text-xl items-center">
+            <div class="flex gap-3 text-xl items-center">
+              <i
+                class="fa-solid fa-bars lg:hidden cursor-pointer"
+                id="bars"
+              ></i>
+              <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
+              <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href=""> <i class="fa-solid fa-heart hidden lg:block"></i></a>
+            </div>
+            <div class="hidden lg:block primary-color">
+              <a class="flex gap-2 items-center" href="">
+                <i class="fa-solid fa-user"></i>
+                <div class="font-bold">
+                  <span>ورود</span>
+                  <span>/</span>
+                  <span>ثبت نام</span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="hidden lg:flex lg:gap-6 text-xl font-bold">
+            <a href="./index.html">خانه</a>
+            <a href="">همکاری باما</a>
+            <a href="">تماس باما</a>
+            <a href="">محصولات</a>
+            <a href="">فروش ویژه</a>
+            <a class="primary-color" href="">سبد خرید</a>
+          </div>
+          <div><img src="./assets/imgs/logo_corano_125x.webp" alt="" /></div>
+        </div>
+      </div>
+    </header>
+    <!-- =======
+first swiper
+======= -->
+
+    <!-- =======
+support
+======= -->
+
+    <!-- =======
+Our Products
+======= -->
+    <div class=" ">
+      <div class="products text-center mt-20 w-11/12 mx-auto">
+        <div class="flex flex-col max-w-screen-2xl mx-auto justify-center">
+          <div>
+            <div class="flex flex-col gap-2">
+              <h1 class="text-3xl md:text-4xl font-bold primary-color">
+                محصولات ما
+              </h1>
+              <span class="text-lg md:text-xl md:font-bold"
+                >محصولات ما را به لیست هفتگی اضافه کنید</span
+              >
+            </div>
+            <div
+              class="flex gap-4 sm:gap-10 justify-center mt-8 md:text-3xl text-2xl"
+            >
+              <span>نقره </span>
+              <span>برنز</span>
+              <span>الماس</span>
+              <span>طلا</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =======
+productsTable
+======= -->
+
+    <div
+      id="productsTable"
+      class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 mt-4 max-w-screen-2xl w-11/12 mx-auto"
+    ></div>
+    <!-- =======
+support
+======= -->
+    <div class="support mt-16">
+      <div
+        class="container-primary grid md:grid-cols-4 grid-cols-2 gap-10 text-center w-10/12"
+      >
+        <div class="flex flex-col gap-4">
+          <i class="fa-solid fa-rotate-left text-2xl primary-color"></i>
+
+          <div class="flex flex-col gap-2">
+            <span class="md:text-3xl text-2xl font-bold"> پرداخت امن </span>
+            <span class="font-semibold">ما پرداخت مطمئن را تضمین می کنیم</span>
+          </div>
+        </div>
+        <div class="flex flex-col gap-4">
+          <i class="fa-regular fa-credit-card text-2xl primary-color"></i>
+          <div class="flex flex-col gap-2">
+            <span class="md:text-3xl text-2xl font-bold">بازگشت پول </span>
+            <span class="font-semibold">یک هفته فرصت برای بازگشت وجه</span>
+          </div>
+        </div>
+        <div class="flex flex-col gap-4">
+          <i class="fa-solid fa-headset text-2xl primary-color"></i>
+          <div class="flex flex-col gap-2">
+            <span class="md:text-3xl text-2xl font-bold"> پشتیبانی 24/7 </span>
+            <span class="font-semibold">پشتیبانی 24 ساعته</span>
+          </div>
+        </div>
+        <div class="flex flex-col gap-4">
+          <i class="fa-solid fa-truck-fast text-2xl primary-color"></i>
+          <div class="flex flex-col gap-2">
+            <span class="md:text-3xl text-2xl font-bold"> ارسال رایگان </span>
+            <span class="font-semibold">ارسال رایگان تمام سفارشات </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ===============
+    Footer   
+    ===============   -->
+    <footer
+      class="footer bg-zinc-100 mt-20 py-10 xl:py-20 border-t-2 borderClr-primary"
+    >
+      <!-- <div class="w-10/12 mx-auto max-w-screen-sm md:hidden">
+        <div>
+          <img class="" src="./assets/imgs/logo_corano_125x.webp" alt="" />
+
+          <p class="mt-6">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati,
+            assumenda.
+          </p>
+        </div>
+        <div class="flex flex-col gap-4 mt-5">
+          <div class="flex justify-between">
+            <a href="">Lorem ip</a>
+            <i class="fa-solid fa-chevron-down primary-color"></i>
+          </div>
+          <div class="flex justify-between">
+            <a href="">Lorem ip</a>
+            <i class="fa-solid fa-chevron-down primary-color"></i>
+          </div>
+          <div class="flex justify-between">
+            <a href="">Lorem ip</a>
+            <i class="fa-solid fa-chevron-down primary-color"></i>
+          </div>
+          <div class="flex justify-between">
+            <a href="">Lorem ip</a>
+            <i class="fa-solid fa-chevron-down primary-color"></i>
+          </div>
+          <div class="flex justify-between">
+            <a href="">Lorem ip</a>
+            <i class="fa-solid fa-chevron-down primary-color"></i>
+          </div>
+        </div>
+      </div> -->
+      <div
+        class="flex flex-col gap-10 sm:grid-cols-2 sm:grid xl:grid-cols-4 container-primary px-4"
+      >
+        <div class="flex flex-col gap-7 items-center xl:items-start">
+          <h3 class="text-2xl font-bold">ما را دنبال کنید</h3>
+          <div class="flex gap-7">
+            <i class="fa-brands fa-instagram text-3xl primary-color"></i>
+            <i class="fa-brands fa-telegram text-3xl primary-color"></i>
+            <i class="fa-brands fa-linkedin text-3xl primary-color"></i>
+            <i class="fa-brands fa-whatsapp text-3xl primary-color"></i>
+          </div>
+        </div>
+        <div class="flex flex-col gap-6 items-center xl:items-start">
+          <h3 class="text-2xl font-bold">تماس با ما</h3>
+          <div class="flex flex-col gap-6 items-start">
+            <div>
+              <i class="fa-solid fa-house primary-color"></i>
+              <span>021-123456789</span>
+            </div>
+            <div>
+              <i class="fa-solid fa-envelope primary-color"></i>
+              <span> demo@yourdomain.com</span>
+            </div>
+            <div>
+              <i class="fa-solid fa-phone primary-color"></i>
+              <span> (012) 800 456 789-987</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-5 items-center xl:items-start">
+          <h3 class="text-2xl font-bold">اطلاعات</h3>
+          <div class="flex flex-col gap-5">
+            <span>شرایط خدمات </span>
+            <span>سیاست حفظ حریم خصوصی </span>
+            <span>سیاست بازپرداخت </span>
+          </div>
+        </div>
+
+        <div class="xl:items-start items-center flex flex-col gap-6">
+          <img src="./assets/imgs/logo_corano_125x.webp" alt="" />
+          <p class="w-10/12 md:w-1/2 xl:w-full">
+            و با استانداردهای جهانی و در بازار بین المللی ارائه کنگروه تولیدی
+            هنری اِلون، بزرگ ترین تولیده ک اصالت ایرانی را به به کار گیری بیشتر
+            از صد متخصص و تنها در عرض 12 سال به محصولی ارزنده د
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ShopProject</title>
+    <title>فروشگاه | صفحه اصلی</title>
 
     <link
       rel="stylesheet"
@@ -16,52 +16,25 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <script src="./assets/js/utility.js" defer></script>
     <script src="./assets/js/main.js" defer></script>
   </head>
   <body class=" " id="body">
-    <!-- <main
-      id="main-page-products"
-      class="container-primary mt-8 md:gap-6 md:flex md:justify-center"
+    <!-- =======
+scrollToTop
+======= -->
+    <button
+      id="ToTopBtn"
+      class="shadow-lg border-2 borderClr-primary p-4 rounded-xl hidden z-30 bg-white fixed bottom-5 right-3"
     >
-      ===skeleton===
-      <div
-        class="flex flex-col items-center rounded-lg shadow-xl text-center border pb-4 overflow-hidden w-full"
-      >
-        <div class="w-full aspect-square bg-slate-400 animate-pulse"></div>
-        <div class="w-1/2 mt-4 h-5 bg-slate-400 animate-pulse"></div>
-        <div class="w-1/2 mt-4 h-5 bg-slate-400 animate-pulse"></div>
-      </div>
-      <div
-        class="flex flex-col items-center rounded-lg shadow-xl text-center border pb-4 overflow-hidden w-full"
-      >
-        <div class="w-full aspect-square bg-slate-400 animate-pulse"></div>
-        <div class="w-1/2 mt-4 h-5 bg-slate-400 animate-pulse"></div>
-        <div class="w-1/2 mt-4 h-5 bg-slate-400 animate-pulse"></div>
-      </div>
-      <div
-        class="flex flex-col items-center rounded-lg shadow-xl text-center border pb-4 overflow-hidden w-full"
-      >
-        <div class="w-full aspect-square bg-slate-400 animate-pulse"></div>
-        <div class="w-1/2 mt-4 h-5 bg-slate-400 animate-pulse"></div>
-        <div class="w-1/2 mt-4 h-5 bg-slate-400 animate-pulse"></div>
-      </div>
-      <div
-        class="flex flex-col items-center rounded-lg shadow-xl text-center border pb-4 overflow-hidden w-full"
-      >
-        <div class="w-full aspect-square bg-slate-400 animate-pulse"></div>
-        <div class="w-1/2 mt-4 h-5 bg-slate-400 animate-pulse"></div>
-        <div class="w-1/2 mt-4 h-5 bg-slate-400 animate-pulse"></div>
-      </div>
-    </main> -->
-    <!-- <a 
-      class="mt-6 rounded w-max mx-auto block px-5 py-2 bg-black text-white"
-      href=""
-      >همه محصولات</a -->
+      <i class="fa-solid fa-arrow-up primary-color text-xl"></i>
+    </button>
+
     <!-- =======
 navbar
 ======= -->
     <nav
-      class="bg-secondary pt-5 h-[100vh] max-w-60 sm:max-w-80 w-full fixed top-0 right-0 z-20 translate-x-full lg:hidden duration-200 shadow-md"
+      class="nav pt-5 h-[100vh] max-w-60 sm:max-w-80 w-full fixed top-0 right-0 z-40 translate-x-full lg:hidden duration-200 shadow-md"
       id="navbar"
     >
       <div>
@@ -95,8 +68,14 @@ navbar
               سبد خرید
             </li>
             <li>
-              <i class="fa-solid fa-user"></i>
-              ورود / ثبت نام
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-user"></i>
+                <div class="font-bold " >
+                  <a class="inline" href="./login.html">ورود</a>
+                  <span>|</span>
+                  <a class="inline" href="./register.html">ثبت نام</a>
+                </div>
+              </div>
             </li>
             <li>
               <i class="fa-solid fa-house"></i>
@@ -125,12 +104,12 @@ navbar
     <!-- =======
 header
 ======= -->
-    <header class="sticky top-0 z-10 ">
+    <header class="sticky top-0 z-10">
       <div
-        class="py-1 bg-primary  max-w-screen-2xl mx-auto  border-b-4 borderClr-primary"
+        class="py-1 bg-primary max-w-screen-2xl mx-auto border-b-4 borderClr-primary"
       >
         <div
-          class="navbar flex items-center justify-between px-4 pb-2 max-w-screen-2xl mx-auto "
+          class="navbar flex items-center justify-between px-4 pb-2 max-w-screen-2xl mx-auto"
         >
           <div class="flex gap-7 text-xl items-center">
             <div class="flex gap-3 text-xl items-center">
@@ -143,14 +122,18 @@ header
               <a href=""> <i class="fa-solid fa-heart hidden lg:block"></i></a>
             </div>
             <div class="hidden lg:block primary-color">
-              <a class="flex gap-2 items-center" href="">
+              <div class="flex items-center gap-2">
                 <i class="fa-solid fa-user"></i>
-                <div class="font-bold">
-                  <span>ورود</span>
-                  <span>/</span>
-                  <span>ثبت نام</span>
+                <div  class="font-bold " id="nameChange">
+                  <a class="inline hover:text-black" href="./login.html"
+                    >ورود</a
+                  >
+                  <span>|</span>
+                  <a class="inline hover:text-black" href="./register.html"
+                    >ثبت نام</a
+                  >
                 </div>
-              </a>
+              </div>
             </div>
           </div>
           <div class="hidden lg:flex lg:gap-6 text-xl font-bold">
@@ -168,7 +151,10 @@ header
     <!-- =======
 first swiper
 ======= -->
-    <div class="border-b-4 borderClr-primary max-w-screen-2xl mx-auto" id="oneSwiper">
+    <div
+      class="border-b-4 borderClr-primary max-w-screen-2xl mx-auto"
+      id="oneSwiper"
+    >
       <div class="swiper" id="firstSwiper">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
@@ -256,7 +242,9 @@ Our Products
       secondSwiper    
       ===============   -->
           <div class="mt-10 flex justify-end items-center gap-3">
-            <a class="text-xl" href="">مشاهده بیشتر</a>
+            <a id="clickSecondSwiper" class="text-xl" href="./products.html"
+              >مشاهده بیشتر</a
+            >
             <i class="fa-solid fa-chevron-left primary-color"></i>
           </div>
           <div class="swiper mt-3 relative shadow" id="secondSwiper">
@@ -273,12 +261,12 @@ Our Products
     ===============   -->
     <div class="max-w-screen-2xl w-11/12 mx-auto">
       <div class="mt-20 flex justify-end items-center gap-3">
-        <a class="text-xl" href="">مشاهده بیشتر</a>
+        <a href="./products.html" class="text-xl"  id="clickThirdSwiper" >مشاهده بیشتر</a>
         <i class="fa-solid fa-chevron-left primary-color"></i>
       </div>
       <div class="swiper mt-3 shadow" id="thirdSwiper">
         <!-- Additional required wrapper -->
-        <div class="swiper-wrapper" id="sowiperThree">
+        <div class="swiper-wrapper text-center" id="sowiperThree">
           <!-- Slides -->
         </div>
         <!-- If we need pagination -->
@@ -407,7 +395,7 @@ Our Products
         </div>
         <div class="max-w-screen-2xl mx-auto">
           <div class="md:mt-10 mt-4 flex justify-end items-center gap-3">
-            <a class="text-xl" href="">مشاهده بیشتر</a>
+            <a href="./products.html" class="text-xl" id="clickFourthSwiper" >مشاهده بیشتر</a>
             <i class="fa-solid fa-chevron-left primary-color"></i>
           </div>
           <div class="swiper mt-3 shadow" id="fourthSwiper">
@@ -617,6 +605,11 @@ Our Products
                   <span>type 1</span>
                   <span class="primary-color">Lorem ipsum dolor sit</span>
                   <span>100.000</span>
+                  <a
+                    href=""
+                    class="border w-max mx-auto py-1 borderClr-primary px-4"
+                    >خرید</a
+                  >
                 </div>
               </div>
             </div>

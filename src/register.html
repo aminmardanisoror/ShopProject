@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ثبت نام</title>
+    <link
+      rel="stylesheet"
+      href="./assets/fonts/fontawesome-free-6.7.1-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./output.css" />
+    <script src="./assets/js/register.js" defer></script>
+  </head>
+  <body class="bg-slate-300">
+    <div
+      class="flex max-w-5xl bg-white shadow-2xl rounded-lg overflow-hidden mx-auto mt-10 w-10/12"
+    >
+      <!-- Left Side: Form -->
+      <div id="leftSide" class="w-full md:w-1/2 p-8">
+        <a href="./index.html">
+          <i class="fa-solid fa-arrow-right-to-bracket"></i>
+          <span>صفحه اصلی</span>
+        </a>
+        <h2 class="text-2xl font-semibold text-gray-800 mt-4">
+          ثبت نام در صفحه ما
+        </h2>
+        <div class="flex justify-center gap-x-3 my-6">
+          <button
+            class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-full"
+          >
+            <i class="fa-brands fa-telegram text-3xl"></i>
+          </button>
+          <button
+            class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-full"
+          >
+            <i class="fa-brands fa-github text-3xl"></i>
+          </button>
+          <button
+            class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-full"
+          >
+            <i class="fa-brands fa-instagram text-3xl"></i>
+          </button>
+        </div>
+        <div class="flex items-center my-4">
+          <hr class="flex-grow border-gray-300" />
+          <span class="mx-4 text-gray-500 text-sm"
+            >یا از طریق ایمیل انجام دهید</span
+          >
+          <hr class="flex-grow border-gray-300" />
+        </div>
+        <form class="space-y-4">
+          <input
+          id="inputName"
+            type="text"
+            placeholder="نام و نام خانوادگی"
+            class="w-full px-4 py-3 bg-gray-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          <p id="message" class="text-sm"></p>
+          <input id="email" type="email" placeholder="ایمیل" class="w-full px-4 py-3 bg-gray-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+          <div class="relative">
+            <input
+              id="inputPassword"
+              type="password"
+              placeholder="رمز عبور"
+              class="w-full px-4 py-3 bg-gray-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            <span
+              class="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 cursor-pointer"
+              ><i class="fa-regular fa-eye"></i
+            ></span>
+          </div>
+          <p id="messagePassword" class="text-sm"></p>
+          <div class="relative">
+            <input
+              id="confirmPassword"
+              type="password"
+              placeholder="تکرار رمز عبور"
+              class="w-full px-4 py-3 bg-gray-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            <span
+              class="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 cursor-pointer"
+              ><i class="fa-regular fa-eye"></i
+            ></span>
+          </div>
+          <p id="repeatPassword" class="text-sm"></p>
+          <button
+          id="submit"
+            type="submit"
+            class="w-full py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 focus:ring-4 focus:ring-blue-300"
+          >
+            ثبت نام
+          </button>
+        </form>
+        <p class="mt-6 text-sm text-gray-600 text-center">
+          حساب کاربری دارید؟
+          <a href="./login.html" class="text-blue-500 hover:underline">وارد شوید</a>
+        </p>
+    
+      </div>
+
+      <!-- Right Side: Image -->
+      <div class="hidden md:block w-1/2">
+        <img
+          src="./assets/imgs/istockphoto-622223998-2048x2048.jpg"
+          alt="Signup Image"
+          class="object-cover w-full h-full"
+        />
+      </div>
+    </div>
+ 
+  </body>
+</html>

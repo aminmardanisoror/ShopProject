@@ -3,31 +3,31 @@
 @tailwind utilities;
 
 @layer components {
-    .container-primary {
-      @apply max-w-screen-xl mx-auto;
-    }
-    .primary-color {
-      
-      color: rgb(196, 170, 26);
-      
-      /* color: #b400ae; */
-      
-    }
-    .bg-primary {
-      /* background-color: #b400ae; */
-      background-color: white
-    }
-    .bg-secondary {
-      /* background-color: rgb(210, 199, 140); */
-      background-color: rgb(214, 210, 187);
-    }
-    .borderClr-primary {
-      border-color: rgb(196, 170, 26);
-      /* border-color: #b400ae; */
-    }
-    .blackAll {
-     opacity: 0.1;
-    }
-   
+  .container-primary {
+    @apply max-w-screen-xl mx-auto;
   }
+  .primary-color {
+    color: rgb(196, 170, 26);
 
+    /* color: #b400ae; */
+  }
+  .bg-primary {
+    /* background-color: #b400ae; */
+    background-color: white;
+  }
+  .bg-secondary {
+    /* background-color: rgb(210, 199, 140); */
+    background-color: rgb(214, 210, 187);
+  }
+  .borderClr-primary {
+    border-color: rgb(196, 170, 26);
+    /* border-color: #b400ae; */
+  }
+  .blackAll {
+    opacity: 0.1;
+  }
+  .nav {
+    background: hsl(0 0% 100% /0.1);
+    backdrop-filter: blur(3rem);
+  }
+}
