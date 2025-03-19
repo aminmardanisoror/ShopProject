@@ -1,65 +1,4 @@
 // ==========
-// push product card
-// ==========
-// window.onload = function () {
-//   let data = JSON.parse(localStorage.getItem("newItems"));
-//   if(data == null) {
-//     productList.innerHTML = 'محصولی ساخته نشده'
-//   }else{
-
-//     function renderProducts(products) {
-//       const template = products.map((product) => {
-//         return `
-
-//   <div class="border borderClr-primary pb-5 flex flex-col justify-center bg-white">
-//   <div class="flex justify-between w-11/12 mx-auto text-xl">
-//    <button class="text-red-600 deleteProduct" > حذف </button>
-//    <button> ویرایش </button>
-
-//   </div>
-//                     <img src="${product.img}" alt="" />
-//                     <div class="flex flex-col gap-3 mt-3 text-center">
-//                       <span>${product.name}</span>
-//                       <span class="primary-color">${product.rate}</span>
-//                       <span>${product.price}</span>
-
-//                     </div>
-//                      <a
-//                       href=""
-//                       class="border w-max mx-auto py-1 borderClr-primary px-4"
-//                       >خرید</a>
-//                   </div>
-
-//   `;
-//       }).join("");
-//       productList.innerHTML = template;
-//     }
-
-//     renderProducts(data);
-//   }
-//  // ==========
-// // end of push product card
-// // ===========
-//   // ==========
-// // delete product card
-// // ===========
-
-// let deleteProduct = document.querySelectorAll('.deleteProduct')
-
-// function removeCart() {
-//   console.log('amin mardani');
-
-// }
-
-// deleteProduct.addEventListener('click',removeCart())
-
-// // ==========
-// // end of delete product card
-// // ===========
-// };
-
-
-// ==========
 // make product card
 // ===========
 
@@ -71,13 +10,14 @@ function makeProduct(event) {
 
   const productName = document.getElementById("productName").value;
   const productPrice = document.getElementById("productPrice").value;
+  const productType = document.getElementById("productType").value;
   const productRating = document.getElementById("productRating").value;
   const productImage = document.getElementById("productImage").files[0];
 
   const reader = new FileReader();
   reader.onloadend = function () {
     const productCard = document.createElement("div");
-    
+
     productCard.innerHTML = `  
             <div class="border borderClr-primary pb-5 flex flex-col justify-center bg-white">
                   <img src="${reader.result}" alt="${productName}" />
@@ -95,6 +35,7 @@ function makeProduct(event) {
     const itemsData = {
       name: productName,
       price: productPrice,
+      type: productType,
       rate: productRating,
       img: reader.result,
     };
@@ -118,8 +59,7 @@ function makeProduct(event) {
   if (productImage) {
     reader.readAsDataURL(productImage);
   }
-  
-  localStorage.setItem("madeProduct", "yes");
+  location.reload();
 }
 
 productForm.addEventListener("submit", makeProduct);
@@ -127,20 +67,23 @@ productForm.addEventListener("submit", makeProduct);
 //end of make product card
 // ===========
 
-
 // ==========
 //push product form storage
 // ===========
 let data = JSON.parse(localStorage.getItem("newItems"));
 
-
 if (data != null) {
-
-
   function renderProducts(products) {
-    const template = products.map((product) => {
-      return `
+    const template = products
+      .map((product, index) => {
+        return `
          <div class="border borderClr-primary pb-5 flex flex-col justify-center bg-white">
+         <div class="flex justify-between w-11/12 mx-auto">
+         
+         <button class="text-red-600 deleteBtn " data-index="${index}" >حذف</button>
+        
+         <span>ویرایش</span>
+         </div>
                     <img src="${product.img}"  />
                     <div class="flex flex-col gap-3 mt-3 text-center">
                       <span>${product.name}</span>
@@ -148,18 +91,48 @@ if (data != null) {
                       <span>${product.price}</span> 
                     </div>
                      <a
-                      href=""
-                      class="border w-max mx-auto py-1 borderClr-primary px-4"
+                      href="" 
+                      class="border mt-4 w-max mx-auto py-1 borderClr-primary px-4"
                       >خرید</a>
                   </div>
         `;
-    }).join('');
-    productList.innerHTML = template
+      })
+      .join("");
+
+    data.forEach((product) => {
+      console.log(product.type);
+      if (product.type === "گوشواره") {
+        const productListEarrings = document.getElementById(
+          "productListEarrings"
+        );
+        productListEarrings.innerHTML = template;
+      } else if (product.type === "گردنبند") {
+        // (product.type.includes("گردنبند"))
+        const productListNecklace = document.getElementById(
+          "productListNecklace"
+        );
+        productListNecklace.innerHTML = template;
+      }
+    });
+
+    const deleteButtons = document.querySelectorAll(".deleteBtn");
+    deleteButtons.forEach((button) => {
+      button.addEventListener("click", (event) => {
+        const index = event.target.getAttribute("data-index");
+        deleteProduct(index);
+      });
+    });
   }
-  renderProducts(data)
+
+  function deleteProduct(index) {
+    data.splice(index, 1); // محصول را از آرایه حذف می‌کند
+
+    localStorage.setItem("newItems", JSON.stringify(data)); // به روز رسانی localStorage
+    renderProducts(data); // مجدد لیست محصولات را رندر می‌کند
+  }
+  renderProducts(data);
 }
+
 // ==========
 //end of push product form storage
 // ==========
-
-

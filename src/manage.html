@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="fa" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -33,6 +33,17 @@
             required
             class="mt-1 p-2 border border-gray-300 rounded-md w-full"
           />
+        </div>
+        <div class="mb-4 ">
+          <label class="block text-sm font-medium text-gray-700"
+            > نوع محصول</label
+          >
+         <select name="" id="productType" class="mt-1 p-2 border border-gray-300 rounded-md w-full">
+          <option value="گوشواره">گوشواره</option>
+          <option value="گردنبند">گردنبند</option>
+          <option value="حلقه">حلقه</option>
+          <option value="انگشتر">انگشتر</option>
+         </select>
         </div>
         <div class="mb-4">
           <label class="block text-sm font-medium text-gray-700"
@@ -68,14 +79,24 @@
         </button>
       </form>
     </div>
-<!-- ==========
+    <!-- ==========
 productList
 =========== -->
-    <div
-      id="productList"
-      class="mt-8  mx-auto grid grid-cols-2 lg:grid-cols-5 sm:grid-cols-3 gap-4 w-11/12"
-    >
-  
-  </div>
+
+    <hr class="mt-4" />
+    <div class="flex flex-col">
+      <h1>گوشواره ها</h1>
+      <div
+        id="productListEarrings"
+        class="mt-20 mx-auto grid grid-cols-2 lg:grid-cols-5 sm:grid-cols-3 gap-4 w-11/12"
+      ></div>
+    </div>
+    <div class="flex flex-col mt-7">
+      <h1>گردنبند ها</h1>
+      <div
+        id="productListNecklace"
+        class="mt-20 mx-auto grid grid-cols-2 lg:grid-cols-5 sm:grid-cols-3 gap-4 w-11/12"
+      ></div>
+    </div>
   </body>
 </html>
